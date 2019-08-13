@@ -1,0 +1,515 @@
+@charset "utf-8";
+@import url('base.css');
+@import url('header_footer.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+body {
+  font-family:'Poppins','Noto Sans KR','맑은 고딕', sans-serif;
+  font-size:14px;
+}
+
+#main{
+	width:100%;
+	height:1000px;
+	overflow:hidden;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#96a4d9+0,a3abd4+33,a9aed4+69,b0a9c7+100 */
+background: rgb(150,164,217); /* Old browsers */
+background: -moz-linear-gradient(top, rgb(150,164,217) 0%, rgb(163,171,212) 33%, rgb(169,174,212) 69%, rgb(176,169,199) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgb(150,164,217) 0%,rgb(163,171,212) 33%,rgb(169,174,212) 69%,rgb(176,169,199) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgb(150,164,217) 0%,rgb(163,171,212) 33%,rgb(169,174,212) 69%,rgb(176,169,199) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', endColorstr='#b0a9c7',GradientType=0 ); /* IE6-9 */
+
+  position:relative;
+}
+
+#main>.main_list{
+  width:1200px;
+  height:100%;
+  margin:0px auto;
+}
+
+/*--------------------------------dnf-container---------------------*/
+
+.dnf-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  height: 450px; }
+
+.img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  height: 120%;
+  animation-name: img-mask;
+  animation-delay: 0.3s;
+  animation-duration: 2.3s;
+  animation-fill-mode: both;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  z-index: 1; }
+
+.text-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation-name: text-wrapper;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.5, 0, 0.3, 0.9);
+  animation-fill-mode: forwards;
+  z-index: 2; }
+
+  /* title */
+.text-wrapper .title {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    letter-spacing:-0.3px;
+    color: #EEE; }
+
+  .text-wrapper .subtitle {
+    width: 80%;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+    color: #e0dddf; }
+
+.text-wrapper .subtitle-top {
+      top: 7.5%; }
+
+.text-wrapper .subtitle-bottom {
+      bottom: 15%; }
+
+.outline {
+  position: absolute;
+  background-color: #fff;
+  animation-duration: 1s;
+  box-shadow: 0px 0px 1px 0px #d9b38e; }
+
+.outline:after {
+    position: absolute;
+    content: '';
+    display: block;
+    background-color: #fff;
+    box-shadow: 0px 0px 1px 0px white;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.5, 1); }
+
+.outline-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation-name: outline-wrapper;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.3, 1);
+    animation-fill-mode: forwards; }
+
+.outline-x {
+    width: 88%;
+    height: 3px;
+    animation-name: outline-x;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.6, 0.6); }
+
+.outline-x:after {
+      width: 100%;
+      height: 1px; }
+
+.outline-y {
+    width: 3px;
+    height: 88%;
+    animation-name: outline-y;
+    animation-timing-function: cubic-bezier(0.5, 0, 0.6, 0.6); }
+
+.outline-y:after {
+      width: 1px;
+      height: 100%; }
+
+.outline-top {
+    top: 0%;
+    left: calc((100% - 88%)/2);
+    transform-origin: right center; }
+
+.outline-top:after {
+      top: 7px;
+      animation-name: inline-top;
+      transform-origin: left center; }
+
+.outline-bottom {
+    top: calc(100% - 3px);
+    left: calc((100% - 88%)/2);
+    transform-origin: left center; }
+
+.outline-bottom:after {
+      bottom: 7px;
+      animation-name: inline-bottom;
+      transform-origin: right center; }
+
+.outline-left {
+    top: calc((100% - 88%)/2);
+    left: 0%;
+    transform-origin: bottom center; }
+
+.outline-left:after {
+      left: 7px;
+      animation-name: inline-left;
+      transform-origin: top center; }
+
+.outline-right {
+    top: calc((100% - 88%)/2);
+    left: calc(100% - 3px);
+    transform-origin: top center; }
+
+.outline-right:after {
+      right: 7px;
+      animation-name: inline-right;
+      transform-origin: bottom center; }
+
+@keyframes img-mask {
+  from {
+    transform: translate(-50%, -62%);
+    -webkit-clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); }
+  to {
+    transform: translate(-50%, -50%);
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); } }
+@keyframes text-wrapper {
+  from {
+    transform: scale(0) rotate(135deg); }
+  64% {
+    transform: scale(1.01) rotate(0); }
+  73% {
+    transform: scale(1.01);
+    animation-timing-function: cubic-bezier(0, 0.3, 0.4, 0.7); }
+  to {
+    transform: scale(0.92); } }
+@keyframes outline-wrapper {
+  from {
+    transform: scale(0.1) rotate(135deg); }
+  66% {
+    transform: scale(1) rotate(0);
+    animation-timing-function: cubic-bezier(0, 0.5, 0.5, 1); }
+  to {
+    transform: scale(0.91); } }
+@keyframes inline-top {
+  from {
+    transform: translateX(-3.5%) scaleX(0); }
+  to {
+    transform: translateX(0%) scaleX(1); } }
+@keyframes inline-bottom {
+  from {
+    transform: translateX(3.5%) scaleX(0); }
+  to {
+    transform: translateX(0%) scaleX(1); } }
+@keyframes inline-left {
+  from {
+    transform: translateY(-3.5%) scaleY(0); }
+  to {
+    transform: translateY(0%) scaleY(1); } }
+@keyframes inline-right {
+  from {
+    transform: translateY(3.5%) scaleY(0); }
+  to {
+    transform: translateY(0%) scaleY(1); } }
+@keyframes outline-x {
+  from {
+    transform: scaleX(0); }
+  to {
+    transform: scaleX(1); } }
+@keyframes outline-y {
+  from {
+    transform: scaleY(0); }
+  to {
+    transform: scaleY(1); } }
+
+/*# sourceMappingURL=style.css.map */
+
+
+/*----------------------------dnf-container END ------------------*/
+
+#main>.main_list>.scroll_btn{
+  display:block;
+  text-align:center;
+  margin-top:870px;
+}
+/*-------------------------------전체선언 시작------------------*/
+#projects{
+	width:100%;
+	overflow:hidden;
+}
+
+#projects>h2{
+	display:none;
+}
+
+#projects article{
+	position:relative;
+	width:1200px; height:1000px;
+	margin:0px auto;
+	overflow:hidden;
+}
+
+
+#projects h2{
+	font-size:52px;
+	letter-spacing:-1px;
+	color:#111;
+	text-decoration:underline;
+	line-height:66px;
+}
+
+#projects h3{
+	font-size:16px;
+	font-weight:bold;
+	letter-spacing:-1px;
+  color:#222;
+}
+
+#projects .s_tit{
+	position:absolute;
+}
+
+
+#projects .s_tit p{
+	font-family:'Noto Sans KR','맑은 고딕', sans-serif;
+	font-size:16px;
+	letter-spacing:-1.7px;
+  color:#333;
+  line-height:35px;
+}
+
+#projects img:hover{
+	overflow:hidden;
+	transform:scale(1.01);
+	transition:all 0.8s;
+}
+
+/*-------------------------------전체선언 끝------------------*/
+#projects>#profile{
+}
+
+#projects>#profile>.profile_box{
+
+}
+
+#projects>#profile>.profile_box>.profile_img{
+	width:685px; height:437px;
+	overflow:hidden;
+	padding-top:238px;
+}
+
+#projects>#profile>.profile_box>.profile_img img{
+	width:685px; height:437px;
+	transition:all 0.8s;
+}
+
+#projects>#profile>.profile_box>.tit>h2{
+	position:absolute; right:100px; top:290px;
+	transition:all 0.8s;
+}
+
+#projects>#profile>.profile_box>.s_tit{
+	right:70px; top:450px;
+}
+
+
+/*----------------------프로필 끝  니콘 시작 --------------------*/
+
+#projects>#nikon{
+}
+
+#projects>#nikon>.nikon_box{
+
+}
+
+#projects>#nikon>.nikon_box>.nikon_img{
+	width:746px; height:490px;
+	overflow:hidden;
+	padding-top:208px;
+}
+
+#projects>#nikon>.nikon_box>.nikon_img img{
+	width:746px; height:490px;
+	transition:all 0.8s;
+}
+
+#projects>#nikon>.nikon_box>.tit>h2{
+position:absolute; right:40px; top:270px;
+transition:all 0.8s;
+}
+
+#projects>#nikon>.nikon_box>.s_tit{
+	right:90px; top:440px;
+	padding-top:10px;
+	line-height:20px;
+}
+
+/*----------------------니콘 끝 타이완 시작 --------------------*/
+
+#projects>#taiwan{
+
+}
+
+#projects>#taiwan>.taiwan_box{
+}
+#projects>#taiwan>.taiwan_box>.taiwan_img{
+	width:648px; height:458px;
+	overflow:hidden;
+	padding-top:138px;
+
+}
+#projects>#taiwan>.taiwan_box>.taiwan_img img{
+	width:648px; height:458px;
+	transition:all 0.8s;
+}
+#projects>#taiwan>.taiwan_box>.tit>h2{
+position:absolute; right:40px; top:318px;
+transition:all 0.8s;
+}
+
+#projects>#taiwan>.taiwan_box>.taiwan_img_2{
+	margin-left:748px;
+	margin-top:10px;
+	width:453px; height:272px;
+	overflow:hidden;
+}
+
+#projects>#taiwan>.taiwan_box>.taiwan_img_2 img{
+	transition:all 0.8s;
+	width:453px; height:272px;
+	overflow:hidden;
+}
+#projects>#taiwan>.taiwan_box>.s_tit{
+	left:10px; bottom:170px;
+	padding-top:10px;
+	line-height:20px;
+}
+
+
+/*----------------------타이완끝 신한 시작 --------------------*/
+
+#projects>#shinhan{
+
+}
+#projects>#shinhan>.shinhan_box{
+
+}
+#projects>#shinhan>.shinhan_box>.shinhan_img{
+	padding-top:238px;
+	width:706px; height:460px;
+	overflow:hidden;
+}
+#projects>#shinhan>.shinhan_box>.shinhan_img img{
+	width:706px; height:460px;
+	transition:all 0.8s;
+}
+#projects>#shinhan>.shinhan_box>.tit>h2{
+position:absolute; right:40px; top:295px;
+transition:all 0.8s;
+}
+
+#projects>#shinhan>.shinhan_box>.s_tit{
+	right:40px; top:450px;
+	padding-top:10px;
+	line-height:20px;
+}
+
+/*----------------------신한끝 cj 시작 --------------------*/
+
+#projects>#seoul{
+}
+#projects>#seoul>.seoul_box{
+}
+#projects>#seoul>.seoul_box>.seoul_img{
+	width:682px; height:462px;
+	overflow:hidden;
+	padding-top:238px;
+}
+#projects>#seoul>.seoul_box>.seoul_img img{
+	width:682px; height:462px;
+	transition:all 0.8s;
+}
+#projects>#seoul>.seoul_box>.tit>h2{
+position:absolute; right:0px; top:320px;
+
+}
+
+#projects>#seoul>.seoul_box>.s_tit{
+	right:140px; bottom:300px;
+	padding-top:10px;
+	line-height:20px;
+}
+
+
+
+/*----------------------seoul museum끝 포토시작 --------------------*/
+
+#projects>#photo{
+
+}
+
+#projects>#photo>.photo_box{
+
+}
+
+#projects>#photo>.photo_box>.photo_img{
+	width:706px; height:460px;
+	overflow:hidden;
+	padding-top:238px;
+	padding-left:40px;
+}
+
+#projects>#photo>.photo_box>.photo_img img{
+	width:706px; height:460px;
+	transition:all 0.8s;
+}
+
+#projects>#photo>.photo_box>.tit>h2{
+	position:absolute;
+	right:40px; top:362px;
+}
+
+#projects>#photo>.photo_box>.s_tit{
+	right:100px; bottom:360px;
+	padding-top:10px;
+	line-height:20px;
+}
+
+
+/*----------------------포토끝 에필로그시작 --------------------*/
+#projects>#process{
+}
+#projects>#process>.process_box{
+}
+#projects>#process>.process_box>.process_img{
+	width:688px; height:461px;
+	overflow:hidden;
+	padding-left:20px;
+	padding-top:238px;
+}
+#projects>#process>.process_box>.process_img img{
+	width:688px; height:461px;
+	transition:all 0.8s;
+}
+#projects>#process>.process_box>.tit>h2{
+	position:absolute; right:40px; top:338px;
+	transition:all 0.8s;
+}
+
+#projects>#process>.process_box>.s_tit{
+	right:175px; top:438px;
+	padding-top:10px;
+	line-height:20px;
+}

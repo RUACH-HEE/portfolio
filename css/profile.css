@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url('base.css');
+@import url('header_footer.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+
+body {
+  font-family:'Poppins','Noto Sans KR','맑은 고딕', sans-serif;
+  font-size:14px;
+}
+
+#intro{
+  width:1200px;
+  height:900px;
+  margin:0px auto;
+}
+
+
+
+/*text*/
+  .text_area{
+    margin:0px auto;
+    width:1200px;
+    height:250px;
+    padding-top:100px;
+  }
+
+  .text_area>h2{
+    font-size:62px;
+    letter-spacing:-1px;
+    color:#111;
+    text-decoration:underline;
+    line-height:66px;
+    font-weight:bold;
+  }
+/*text-end*/
+
+.contents{
+  width:100%;
+  height:5554px;
+  background:url(../profile/img/profile_img.jpg) center center no-repeat;
+}
