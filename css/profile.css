@@ -2,7 +2,7 @@
 @import url('base.css');
 @import url('header_footer.css');
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
-@import url('http://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
 
 body {
   font-family:'Poppins','Noto Sans KR','맑은 고딕', sans-serif;
@@ -81,5 +81,3 @@ body {
   background: #333;
   margin: 20px auto;
 }
-
-  background:url(../profile/img/real3.png) center center no-repeat;
