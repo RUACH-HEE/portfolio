@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>SONMINHEE PORTFOLIO</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+	<!--zoomwall-->
+	<script type="text/javascript" src="js/zoomwall.js"></script>
+	<link rel="stylesheet" href="css/zoomwall.css">
+	<!--swiper-->
+	<script type="text/javascript" src="js/swiper.jquery.min.js"></script>
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<script src="js/prefixfree.min.js"></script>
+	<!--[if it IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+	$(function(){
+		window.onload = function() {
+    zoomwall.create(document.getElementById('gallery'));
+};
+	$('.bar1').on('click',function(){
+		$('footer').css('left','0px');
+		$('.bar1').css('display','none');
+		$('.bar2').css('display','block');
+	})
+
+	$('.bar2').on('click',function(){
+		$('footer').css('left','-900px');
+		$('.bar1').css('display','block');
+		$('.bar2').css('display','none');
+	})
+	$('.nav').on('click',function(){
+		$('nav').toggleClass("switch");
+	})
+		var swiper = new Swiper('.swiper-container', {
+		spaceBetween: 30,
+		effect: 'fade',
+		autoplay: 6000
+});
+})
+	</script>
+</head>
+<body>
+
+	<!--header-->
+			<header>
+			<div class="logo">
+			<h1><a href="https://ruach-hee.github.io/portfolio/">손민희 포트폴리오</a></h1>
+			</div>
+			<nav>
+				<a href="javascript:;" class="nav">all menu</a>
+				<div class="quick_box">
+				<ul>
+						<li class="slide1"><span class="num">01</span>
+								<span class="after"></span>
+								<a href="https://ruach-hee.github.io/portfolio/profile/index.html" target="_blank">PROFILE MINHEE SON</a></li>
+
+						<li class="slide2"><span class="num">02</span>
+								<span class="after"></span>
+								<a href="https://ruach-hee.github.io/portfolio/nikon/index.html" target="_blank">PROJECT DESIGN NIKON</a></li>
+
+						<li class="slide3"><span class="num">03</span>
+								<span class="after"></span>
+								<a href="https://ruach-hee.github.io/portfolio/taiwan/index.html" target="_blank">MAIN DESIGN TAIWAN TOUR OFFICE</a></li>
+
+						<li class="slide4"><span class="num">04</span>
+								<span class="after"></span>
+								<a href="https://ruach-hee.github.io/portfolio/shinhan/index.html" target="_blank">MAIN DESIGN SHINHAN CARD</a></li>
+
+						<li class="slide5"><span class="num">05</span>
+								<span class="after"></span>
+								<a href="https://ruach-hee.github.io/portfolio/seoulmuseum/index.html" target="_blank">RESPONSIVE DESIGN S.M.H</a></li>
+
+						<li class="slide6"><span class="num">06</span>
+								<span class="after"></span>
+								<a href="https://ruach-hee.github.io/portfolio/photo/index.html" target="_blank">PHOTOGRAPHY BY MINHEE</a></li>
+
+						<li class="slide7"><span class="num">07</span>
+								<span class="after"></span>
+								<a href="#">PDF DOWNLOAD</a></li>
+				</ul>
+				</div>
+			</nav>
+			</header>
+	<!--header END-->
+
+	<!--footer contact/profile-->
+			<footer>
+			<div class="open">
+				<span class="bar1">contact me</span>
+				<span class="bar2">close</span>
+					<div class="pannel">
+						<div class="foot_wrap">
+							<div class="basic">
+								<p class="text">
+									Web designer publisher planer<br>
+									SON MIN HEE
+								</p>
+
+								<img src="img/me2.jpg" alt="손민희">
+
+								<div class="about">
+								<h3>ABOUT ME</h3>
+								<p>손민희 孫旻姬</p>
+								<p>1994 . 12 . 27</p>
+								</div>
+
+								<div class="education">
+								<h3>EDUCATION</h3>
+								<p>서울디자인고등학교 조명예술디자인과 졸업</p>
+								<p>배화여자대학 경영과 졸업</p>
+								<p>더조은아카데미학원 디지털(UI/UX 모바일 웹)디자인 실무 수료</p>
+								</div>
+
+								<div class="contact">
+								<h3>CONTACT ME</h3>
+								<p>phone. 010-3590-0630</p>
+								<p>mail. minimi7723@gmail.com</p>
+								<a href="https://www.instagram.com/m1n1picture/">instagram. instagram.com/m1n1picture/</a>
+								</div>
+
+								<div class="interest">
+								<h3>INTEREST</h3>
+								<p>#사진촬영  #엽서제작  #여행  #국내여행</p>
+								<p>#영화보기  #전시보기  #책보기  #모든보기</p>
+								<p>#보고 감상하는 것을 사랑해요</p>
+								</div>
+
+							</div>
+						</div>
+					</div>
+			</div>
+			</footer>
+	<!--footer contact/profile END-->
+
+  <!--contents-->
+	<section id="photo_main">
+		<div class="text_area">
+			<h2>PHOTOGRAPHY<br>BY MINHEE</h2>
+		</div>
+
+			<!-- Swiper -->
+			 <div class="swiper-container">
+					 <div class="swiper-wrapper">
+							 <div class="swiper-slide" style="background-image:url(img/web/me/me1.jpg)"></div>
+							 <div class="swiper-slide" style="background-image:url(img/web/me/me3.jpg)"></div>
+					 </div>
+			 </div>
+
+			 <div class="text_area2">
+				<p>저는 사진을 좋아하고 훌쩍 떠나기를 좋아합니다.<br>
+					 낯선 그곳에서 만나는 낯선 사람들과 장벽없이 자신을 나누며 소통하는 방법을 배울 수 있었고,
+					 <br>그들의 경험과 모습을 통해 삶의 지혜를 키울 수 있었습니다.<br>
+					 제 마음이 담긴, 그 곳의 순간들이 담긴 사진들을 모아보았습니다.<br>
+					 따뜻한 시선으로 바라봐주시면 감사하겠습니다 : )<br>
+					 .<br>
+					 .<br>
+					 .<br>
+					 .<br>
+				<p class="ps">용량문제로 사진수가 적습니다.<br>
+					 더 많은 사진은 개인계정에 있습니다 :)<br>
+					 instagram.com/ruachph/ 를 참고해주세요.</p>
+				</p>
+			 </div>
+	</section>
+
+  <section id="photo">
+    <div id="gallery" class="zoomwall">
+			<img src="img/1_250.jpg" data-highres="img/1_1280.jpg">
+			<img src="img/2_250.jpg" data-highres="img/2_1280.jpg">
+			<img src="img/3_250.jpg" data-highres="img/3_1280.jpg">
+			<img src="img/5_250.jpg" data-highres="img/5_1280.jpg">
+			<img src="img/6_250.jpg" data-highres="img/6_1280.jpg">
+			<img src="img/13_250.jpg" data-highres="img/13_1280.jpg">
+			<img src="img/18_250.jpg" data-highres="img/18_1280.jpg">
+			<img src="img/19_250.jpg" data-highres="img/19_1280.jpg">
+			<img src="img/20_250.jpg" data-highres="img/20_1280.jpg">
+			<img src="img/24_250.jpg" data-highres="img/24_1280.jpg">
+			<img src="img/25_250.jpg" data-highres="img/25_1280.jpg">
+			<img src="img/26_250.jpg" data-highres="img/26_1280.jpg">
+			<img src="img/31_250.jpg" data-highres="img/31_1280.jpg">
+			<img src="img/33_250.jpg" data-highres="img/33_1280.jpg">
+			<img src="img/34_250.jpg" data-highres="img/34_1280.jpg">
+			<img src="img/36_250.jpg" data-highres="img/36_1280.jpg">
+			<img src="img/37_250.jpg" data-highres="img/37_1280.jpg">
+			<img src="img/39_250.jpg" data-highres="img/39_1280.jpg">
+			<img src="img/40_250.jpg" data-highres="img/40_1280.jpg">
+			<img src="img/41_250.jpg" data-highres="img/41_1280.jpg">
+			<img src="img/42_250.jpg" data-highres="img/42_1280.jpg">
+			<img src="img/43_250.jpg" data-highres="img/43_1280.jpg">
+			<img src="img/44_250.jpg" data-highres="img/44_1280.jpg">
+			<img src="img/45_250.jpg" data-highres="img/45_1280.jpg">
+			<img src="img/46_250.jpg" data-highres="img/46_1280.jpg">
+			<img src="img/47_250.jpg" data-highres="img/47_1280.jpg">
+			<img src="img/48_250.jpg" data-highres="img/48_1280.jpg">
+			<img src="img/49_250.jpg" data-highres="img/49_1280.jpg">
+			<img src="img/50_250.jpg" data-highres="img/50_1280.jpg">
+			<img src="img/51_250.jpg" data-highres="img/51_1280.jpg">
+			<img src="img/52_250.jpg" data-highres="img/52_1280.jpg">
+			<img src="img/53_250.jpg" data-highres="img/53_1280.jpg">
+    </div>
+  </section>
+
+</body>
+</html>

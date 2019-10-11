@@ -37,6 +37,49 @@ body {
 
 .contents{
   width:100%;
-  height:5554px;
-  background:url(../profile/img/profile_img.jpg) center center no-repeat;
+  height:1570px;
+
 }
+.contents>.contents_inner{
+  width:1200px;
+  height:1570px;
+  margin:0px auto;
+	overflow:hidden;
+}
+.contents>.contents_inner>p{
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: -1.5px;
+  color:#333;
+}
+
+.contents>.contents_inner>.c1{
+  width: 100%;
+  height: 260px;
+  font-size: 44px;
+  line-height: 79px;
+  font-weight: bold;
+}
+.contents>.contents_inner>.c{
+  width: 100%;
+  height: 280px;
+
+}
+
+
+.contents>.contents_inner>.cl{
+  width: 1px;
+  height: 120px;
+  background: #333;
+  margin: 0px auto;
+}
+
+.contents>.contents_inner>.cp{
+  width: 9px;
+  height: 9px;
+  background: #333;
+  margin: 20px auto;
+}
+
+  background:url(../profile/img/real3.png) center center no-repeat;

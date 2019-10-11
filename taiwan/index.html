@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="KO">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="대만관광청,타이완관광청,푸통푸통타이완,타이완,대만,관광청,tiwan,Tiwan,TAIWAN,푸통푸통,여진구,조정석">
+  <meta name="Description" content="The heart of asia 대만관광청 홈페이지입니다.">
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <link rel="stylesheet" type="text/css" href="css/base.css"/>
+  <title>SONMINHEE TAIWAN</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+	<!-- jQuery library (served from Google) -->
+	<!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script-->
+	<!-- bxSlider Javascript file -->
+	<script src="js/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="http://thanks12.dothome.co.kr/css/jquery.bxslider.css" rel="stylesheet" />
+	<!--[if lt IE9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/css3-mediaqueries.min.js"></script>
+	<![end if]-->
+<script type="text/javascript">
+ var mobileKeyWords = new Array('iPhone', 'iPod', 'BlackBerry', 'Android', 'Windows CE', 'LG', 'MOT', 'SAMSUNG', 'SonyEricsson');
+ for (var word in mobileKeyWords){
+     if (navigator.userAgent.match(mobileKeyWords[word]) != null){
+         location.href = "mobile/index.html";
+         break;
+     }
+}
+ </script>
+ <script type="text/javascript">
+
+$(function(){
+	$('#header_wrap>#header_box>#gnb_wrap').on('mouseenter',function(){
+		 $('.gnb_bg').stop().slideDown(550);
+		 $('.sub').stop().slideDown(550);
+	 });
+	$('#header_wrap>#header_box>#gnb_wrap').on('mouseleave',function(){
+		 $('.gnb_bg').stop().slideUp(550);
+		 $('.sub').stop().slideUp(550);
+	 });
+
+$('#header_wrap>#header_box>#util>.tnb>.lang').on('click',function(){
+	$('.lang_list').toggleClass('on');
+})
+
+  	$('.bxslider').bxSlider({
+		  auto:true,
+		  pager:true
+ 	 });
+
+	var divNum=$('#them>.them_con>.con_wrap').length;
+	var divWidth=$('#them>.them_con>.con_wrap').width();
+ 	var nMax=divNum-1;
+
+ 	var currentNum=0;
+ 	var newNum=1;
+
+/*	function slideMove(){
+		newNum=currentNum+1;
+		if(newNum>nMax){
+			newNum=0;
+		}
+
+		$('#them>.them_con>.con_wrap').eq(currentNum).stop().animate({left:-divWidth},600);
+		$('#them>.them_con>.con_wrap').eq(newNum).css('left','divWidth').css('zindex','10');
+		$('#them>.them_con>.con_wrap').eq(newNum).stop().animate({left:'0px'},800,function(){
+			currentNum=newNum;
+		});
+	}
+	var timer=setInterval(slideMove,8000);*/
+	$('#them>a.next').on('click',function(event){
+		event.preventDefault();
+		//clearInterval(timer);
+		newNum=currentNum+1;
+		if(newNum>nMax){
+			newNum=0;
+		}
+
+		$('#them>.them_con>.con_wrap').eq(currentNum).css('left','0px');
+		$('#them>.them_con>.con_wrap').eq(currentNum).stop().animate({left:-divWidth},600);
+		$('#them>.them_con>.con_wrap').eq(newNum).css('left',divWidth).css('zindex',10);
+		$('#them>.them_con>.con_wrap').eq(newNum).stop().animate({left:'0px'},600,function(){
+			currentNum=newNum;
+		});
+		//timer=setInterval(slideMove,8000);
+	});
+
+	$('#them>.prev').on('click',function(event){
+		event.preventDefault();
+		//clearInterval(timer);
+		newNum=currentNum-1;//보이는 순서 +1(다음)을 새로 등장할 순서로 정의
+		if(newNum<0){//보여질 순서가 최대값을 넘어서면
+			newNum=nMax;//보여질 순서는 첫번째(번째)로 변경
+		}
+
+		$('#them>.them_con>.con_wrap').eq(currentNum).css('left','0px');
+		$('#them>.them_con>.con_wrap').eq(currentNum).stop().animate({left:divWidth},600);
+		$('#them>.them_con>.con_wrap').eq(newNum).css('left',-divWidth).css('zindex',10);
+		$('#them>.them_con>.con_wrap').eq(newNum).stop().animate({left:'0px'},800,function(){
+			currentNum=newNum; // 새로보여질 개체의 움직임이 끝나면 그 순번이 현재 보여지는 순서로 재 정의
+		});
+		//timer=setInterval(slideMove, 8000);
+	});
+
+})
+
+</script>
+ </head>
+ <body>
+<div id="header_wrap">
+	<div id="header_box">
+		<h1>
+		<a href="#">logo</a>
+		</h1>
+	<div id="gnb_wrap">
+		<ul class="gnb">
+			<li><a href="#">타이완 소개</a>
+					<ul class="sub">
+					<li><a href="#">타이완 소개</a></li>
+					<li><a href="#">국장 소개</a></li>
+					<li><a href="#">관광청 소개</a></li>
+					<li><a href="#">타이완 가이드</a></li>
+					</ul></li>
+			<li><a href="#">지역정보</a>
+					<ul class="sub">
+					<li><a href="#">타이완 북부</a></li>
+					<li><a href="#">타이완 중서부</a></li>
+					<li><a href="#">타이완 동부</a></li>
+					<li><a href="#">타이완 남부</a></li>
+					<li><a href="#">타이완의 섬</a></li>
+					</ul></li>
+				<li><a href="">타이베이</a>
+					<ul class="sub">
+					<li><a href="#">타이베이 관광지도</a></li>
+					</ul></li>
+				<li><a href="">테마/추천여행</a>
+					<ul class="sub">
+					<li><a href="#">13국가 풍경구</a></li>
+					<li><a href="#">내맘대로 탐험</a></li>
+					<li><a href="#">연중무휴 축제속으로</a></li>
+					<li><a href="#">에코그린 + 힐링</a></li>
+					<li><a href="#">타이완 자전거여행</a></li>
+					<li><a href="#">On Tiwan 실시간 타이완</a></li>
+					<li><a href="#">Best FIT, Best Tiwan</a></li>
+					</ul></li>
+				<li><a href="">커뮤니티</a>
+					<ul class="sub">
+					<li><a href="#">생생여행후기</a></li>
+					<li><a href="#">여행상품정보</a></li>
+					</ul></li>
+			</ul>
+		</div>
+	<div id="util">
+		<ul class="tnb">
+		<li class="log"><a href="#">로그인</a><span>l</span></li>
+		<li class="lang"><a href="#">KOR</a><span>더보기</span></li>
+		</ul>
+		<div class="lang_list">
+			<ul>
+			<li><a href="#">English</a></li>
+			<li><a href="#">Chinese</a></li>
+			<li><a href="#">Japanese</a></li>
+			</ul>
+		</div>
+		<div class="my">
+			<a href="#">더보기</a>
+		</div>
+		<div class="search">
+			<a href="#">검색하기</a>
+		</div>
+	</div>
+	</div>
+		<div class="gnb_bg">
+		</div>
+</div>
+
+<div id="content_wrap">
+	<div id="slide_content">
+		<div class="slides">
+			<ul class="bxslider">
+				<li class="bx_list"><img src="img/visual/putong_banner_1.png" alt="두근두근 타이완 관광지 화련"/></li>
+				<li class="bx_list"><img src="img/visual/putong_banner_2.png" alt="두근두근 타이완 로하스 테마여행"/></li>
+				<li class="bx_list"><img src="img/visual/putong_banner_3.png" alt="두근두근 타이완 로하스 테마여행"/></li>
+				<li class="bx_list"><img src="img/visual/putong_banner_4.png" alt="두근두근 타이완 로하스 테마여행"/></li>
+			</ul>
+		</div>
+		</div>
+  </div>
+
+
+
+	<div id="best_place">
+		<h2>지금 가장 뜨거운 관광지</h2>
+		<p>두근두근 매일 설레는 타이완! 다이나믹한 타이완을 경험해 보세요</p>
+		<div class="best_con">
+		<ol>
+			<li class="list_1">
+			<span class="b1">best<br/>1</span>
+			<img src="img/hot/b1.jpg" alt="샹산"/>
+				<div>
+					<strong>샹산 Elephant Mountain</strong>
+					<p>타이페이 101타워와 타이페이 시내 전경을 내려다 볼 수 있는 샹산 하이킹 트레일은,
+            노을녘 올라 야경을 감상하기에 좋은 명소다.
+            가파른 계단을 15~20여분 정도 올라가야 한다.</p>
+					<a href="#">자세히 보기</a>
+				</div>
+			</li>
+
+			<li>
+			<span class="b2">best<br/>2</span>
+			<img src="img/hot/b2.jpg" alt="용산사"/>
+			<div>
+				<strong>용산사 Elephant Mountain</strong>
+				<p>국가2급 고적인 용산사는 불교, 도교, 유교의 중요한 신을 모시고 있는 종합사찰로
+          그중 가장 예불을 받는 것은 관세음보살이다.
+          중국식의 고전건축인 3진4합식의 궁전식 건축으로
+          매우 정밀하며 기둥과 처마의 경계부분에는 못을 쓰지 않는
+          전통양식으로 되어 있고 지붕의 사방에는 용, 봉황, 기린 등
+          길상을 상징하는 조형이 있으며 채색 유리와 기와로 장식되어 있다.
+ </p>
+				<a href="#">자세히 보기</a>
+			</div>
+			</li>
+
+			<li>
+			<span class="b3">best<br/>3</span>
+			<img src="img/hot/b3.jpg" alt="예류 지질공원"/>
+			<div>
+				<strong>예류 지질공원 Elephant Mountain</strong>
+				<p>북부 해안가에 위치한 예류는 넓게 퍼진 수많은 기암괴석이 있는 지질공원이 있다.
+          그만큼 큰 규모를 자랑하는 예류지질공원은 매일 수많은 관광객들로 붐비는 여행지 중 하나이다.
+          예류지질공원에서 제일 유명한 것은 역시나 기암괴석인데,
+          기암은 세계 경관 중 하나로 지금의 희귀한 지형과
+          지질 경관을 만들어 냈다.  </p>
+				<a href="#">자세히 보기</a>
+			</div>
+			</li>
+
+			<li class="list_4">
+			<span class="b4">best<br/>4</span>
+			<img src="img/hot/b4.jpg" alt="마오쿵 곤돌라"/>
+			<div>
+				<strong>마오쿵 곤돌라 Elephant Mountain</strong>
+				<p>곤돌라에서 내려 걸어 나오면 독특한 볼거리와 함께
+					각양각색의 찻집이 즐비하게 서 있다. 마오쿵은 차재
+					배와 판매로 유명한 곳이다.아름다운 타이베이의 야경
+					을 내려다볼 수 있기 때문에데이트 코스로도 제격이다. </p>
+				<a href="#">자세히 보기</a>
+			</div>
+			</li>
+		</ol>
+		</div>
+	</div>
+
+
+	<div id="them">
+		<h2>두근두근 타이완 추천 테마여행</h2>
+		<p>타이완관광청에서 전해드리는 설레는 추천테마여행을 만나보세요</p>
+		<a href="#" class="prev">prev</a>
+		<a href="#" class="next">next</a>
+		<div class="them_con">
+			<div class="con_wrap1 con_wrap">
+				<h3>미식여행</h3>
+				<div class="item mr">
+					<img src="img/them/food/food1.jpg" alt="샤오룽바오"/>
+					<div class="item_text">
+						<strong>피가 얇아 연하고 육즙이 많은 샤오룽바오</strong>
+						<p>작지만 꽉 찬 속, 넘치는 육즙, 풍부한 맛, 얇은 피, 아름다운 모양!</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item">
+					<img src="img/them/food/food2.jpg" alt="홍사오 뉴러우멘"/>
+					<div class="item_text">
+						<strong>씹는 맛이 살아있는 홍사오 뉴러우멘</strong>
+						<p>타이완 특색의 홍사오 조리법을 이용한 씹는맛이 살아있는 소고기면! </p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item mr">
+					<img src="img/them/food/food3.jpg" alt="마라훠궈"/>
+					<div class="item_text">
+						<strong>두 가지 맛을 동시에 즐길 수 있는 마라훠궈</strong>
+						<p>매운 탕과 담백한 탕으로 반씩 나누어져 있어 동시에 두가지 맛을 볼 수 있는 웰빙훠궈!</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item">
+					<img src="img/them/food/food4.jpg" alt="과일빙수"/>
+					<div class="item_text">
+						<strong>시원하고 달콤한 과일빙수</strong>
+						<p>시원하게 갈은 얼음에 녹두, 판, 쩐주, 토란, 젤리 등 토핑을 선택한 후 시럽을 넣은 유쾌한 빙수!</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+			</div>
+
+			<div class="con_wrap2 con_wrap">
+				<h3>로하스여행</h3>
+				<div class="item mr">
+					<img src="img/them/lohas/lohas1.jpg" alt="르웨탄"/>
+					<div class="item_text">
+						<strong>가장 큰 담수 호수 르웨탄</strong>
+						<p>낭만적이고 아름다운 경치 가장 아름다운 고산호수</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item">
+					<img src="img/them/lohas/lohas2.jpg" alt="리위탄"/>
+					<div class="item_text">
+						<strong>가장 큰 내륙호수 리위탄</strong>
+						<p>화련현 경내의 가장 큰 내륙호수 강기슭의 아름다움! </p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item mr">
+					<img src="img/them/lohas/lohas3.jpg" alt="아리산"/>
+					<div class="item_text">
+						<strong>2,216m 높이의 아리산</strong>
+						<p>아름다운 철도 산맥, 계곡 등 아름다운 삼림의 춘하추동을 느끼다!</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item">
+					<img src="img/them/lohas/lohas4.jpg" alt="타이루거"/>
+					<div class="item_text">
+						<strong>웅장한 대리암 협곡으로 유명한 타이루거 국립공원</strong>
+						<p>리우시 폅곡을 따라 펼쳐지는 우뚝 솟은 절벽, 낭따라지, 협곡, 대리암과 시냇물의 절경!</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+			</div>
+
+
+			<div class="con_wrap3 con_wrap">
+				<h3>문화 여행</h3>
+				<div class="item mr">
+					<img src="img/them/cul/cul1.jpg" alt="타이난 웨라오먀오"/>
+					<div class="item_text">
+						<strong>타이완의 옛수도 타이난</strong>
+						<p>옛 문화의 도시, 명승고적의 도시 타이난</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item">
+					<img src="img/them/cul/cul2.jpg" alt="잉거도자기박물관"/>
+					<div class="item_text">
+						<strong>도자기 굽기 체험을 할 수 있는 잉거도자기 박물관</strong>
+						<p>타이완 첫 번째 도자기 전문 박물관 잉거 도자기 박물관!</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item mr">
+					<img src="img/them/cul/cul3.jpg" alt="디화졔"/>
+					<div class="item_text">
+						<strong>타이완의 전통재래 시장 디화졔</strong>
+						<p>타이완에서 가장 큰 규모와 오랜 역사를 자랑하는 전통 재래시장</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item">
+					<img src="img/them/cul/cul4.jpg" alt="핑시천등"/>
+					<div class="item_text">
+						<strong>소원을 담아 날리는 핑시천등</strong>
+						<p>사면이 산으로 둘러싸인 유명한 산촌마을 핑시</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+			</div>
+
+			<div class="con_wrap4 con_wrap">
+				<h3>쇼핑여행</h3>
+				<div class="item mr">
+					<img src="img/them/shop/shop1.jpg" alt="타이베이 세계무역센터 상업지역"/>
+					<div class="item_text">
+						<strong>타이베이의 맨하탄 타이베이 세계무역센터 상업지역</strong>
+						<p>타이베이 시에서 가장 대표적인 상업지역</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item">
+					<img src="img/them/shop/shop2.jpg" alt="가오슝 E-Da 아울렛 몰"/>
+					<div class="item_text">
+						<strong>타이완 첫 직영 브랜드 아울렛 가오슝 E-Da 아울렛 몰</strong>
+						<p>타이완에서 가장 높은 관람차 및 광장, 다양한 먹거리, 패션이 함께 공존하는 곳</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item mr">
+					<img src="img/them/shop/shop3.jpg" alt="타이중 징밍1가"/>
+					<div class="item_text">
+						<strong>도심 속 예술 거리 타이중 징밍1가</strong>
+						<p>대만의 샹젤리제거리 쇼핑과 휴식, 예술을 겸비한 거리!</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+				<div class="item">
+					<img src="img/them/shop/shop4.jpg" alt="가오슝 신쿠쟝 쇼핑의 거리"/>
+					<div class="item_text">
+						<strong>타이완 남부 멀티샵 및 편집샵 밀집지 가오슝 신쿠쟝 쇼핑의 거리</strong>
+						<p>타이완 남부의 가장유명한 수입품 판매 지역인 동시에 남부 유행의 중심지</p>
+					</div>
+					<a href="#">자세히 보기</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="tips">
+		<h2>두근두근 타이완 tour tips</h2>
+		<p>대만관광청에서 즐거운 대만여행을 위한 가이드를 안내해드립니다</p>
+		<div class="tips_wrap">
+		<ul>
+			<li class="tlist_1">
+			<img src="img/tips/t1.jpg" alt="축제정보"/>
+			<a href="#"><span>두근두근 축제정보<br>
+			대만은 매일매일 축제!<br>
+      대만관광청에서 설레는 대만의<br>
+      모든축제정보를 알려드립니다
+			</span></a>
+			</li>
+
+			<li>
+			<img src="img/tips/t2.jpg" alt="타이완 투어버스"/>
+			<a href="#"><span>타이완 투어버스<br>
+			편리한 여행을 위해 명소 위주로 꾸며진<br>
+      다양한 코스와 깊이있는 체험을 제공합니다
+			</span></a>
+			</li>
+
+			<li>
+			<img src="img/tips/t3.jpg" alt="타이완 어플 다운로드"/>
+			<a href="#"><span>타이완 어플 다운로드<br>
+			타이완여행 어플로 더 쉬운여행을 즐기세요!
+			</span></a>
+			</li>
+
+			<li>
+			<img src="img/tips/t4.jpg" alt="가이드북 신청하기"/>
+			<a href="#"><span>가이드북 신청하기<br>
+			대만관광청에서 가이드북 택배신청서비스와 pdf 파일 다운로드서비스를 제공합니다
+			</span></a>
+			</li>
+
+			<li class="tlist_5">
+			<img src="img/tips/t5.jpg" alt="sns 타이완"/>
+			<a href="#"><span>SNS 타이완<br>
+			대만관광청의 SNS를 받아보세요!
+			</span></a>
+			</li>
+
+			<li>
+			<img src="img/tips/t6.jpg" alt="타이완 하오씽"/>
+			<a href="#"><span>타이완 하오씽<br>
+			노선과 가격 및 시간표 등 타이완 셔틀버스의 모든정보를 받아보세요!
+			</span></a>
+			</li>
+
+			<li>
+			<img src="img/tips/t7.jpg" alt="타이완 전체지도"/>
+			<a href="#"><span>타이완 전체지도<br>
+			간편하게 지도로 검색하여 여행을 편리하게<br>
+      떠나실 수 있도록 도와드립니다.
+			</span></a>
+			</li>
+
+			<li>
+			<img src="img/tips/t8.jpg" alt="MOVIE IN TAIWAN"/>
+			<a href="#"><span>MOVIE IN TAIWAN<br>
+			대만홍보영상을 만나보세요!
+			</span></a>
+			</li>
+		</ul>
+		</div>
+	</div>
+
+	<div id="notice">
+		<div class="notice_wrap">
+		<div class="notice1">
+		<h2>공지사항</h2>
+		<a href="#" class="notice_btn1">더보기</a>
+		<ul>
+			<li>
+				<a href="#">[부산 5차] 2017년 자유여행객을 위한 타이완 여행 강연회</a>
+				<span class="date">2017-04-12</span>
+			</li>
+			<li>
+				<a href="#">[임시휴무일 공지] 4월 21일 부산지부/ 4월 24일 서울사무소</a>
+				<span class="date">2017-04-12</span>
+			</li>
+			<li>
+				<a href="#">[마감][서울4차] 2017년 자유여행객을 위한 타이완 여행 강연회 </a>
+				<span class="date">2017-04-12</span>
+			</li>
+			<li>
+				<a href="#">[마감][부산 4차] 2017년 자유여행객을 위한 타이완 여행 강연회 </a>
+				<span class="date">2017-04-12</span>
+			</li>
+			<li>
+				<a href="#">[마감][서울3차] 2017년 자유여행객을 위한 타이완 여행 강연회 </a>
+				<span class="date">2017-04-12</span>
+			</li>
+		</ul>
+		</div>
+
+		<div class="notice2">
+		<h2>보도자료</h2>
+		<a href="#" class="notice_btn2">더보기</a>
+		<ul>
+			<li>
+				<a href="#">2017년 타이완 관광청 로드쇼 </a>
+				<span class="date">2017-04-12</span>
+			</li>
+			<li>
+				<a href="#">[임시휴무일 공지] 4월 21일 부산지부/ 4월 24일 서울사무소</a>
+				<span class="date">2017-04-12</span>
+			</li>
+			<li>
+				<a href="#">[마감][서울4차] 2017년 자유여행객을 위한 타이완 여행 강연회 </a>
+				<span class="date">2017-04-12</span>
+			</li>
+			<li>
+				<a href="#">[마감][부산 4차] 2017년 자유여행객을 위한 타이완 여행 강연회 </a>
+				<span class="date">2017-04-12</span>
+			</li>
+			<li>
+				<a href="#">[마감][서울3차] 2017년 자유여행객을 위한 타이완 여행 강연회 </a>
+				<span class="date">2017-04-12</span>
+			</li>
+		</ul>
+		</div>
+		</div>
+	</div>
+	<div id="footer">
+	<div class="link">
+		<ul>
+		<li><a href="#">CHINA AIRLINES</a></li>
+		<li><a href="#">에바항공</a></li>
+		<li><a href="#">TAIPEI REPUBLIC OF CHINA</a></li>
+		<li><a href="#">워킹홀리데이</a></li>
+		<li><a href="#">YOUTH TRAVEL</a></li>
+		<li><a href="#">타이완 날씨</a></li>
+		<li><a href="#">환율정보</a></li>
+		</ul>
+	</div>
+
+	<address>
+	<div class="ad_wrap">
+	<p>서울시 중구 삼각동 115 경기빌딩 9F 902호 (업무시간 09:00 ~16:00, 점심시간 13:00~14:00 } Tel : 02-732-2358  Fax : 02-732-2359 E-mail : taiwan@tourtaiwan.or.kr
+	<br/>이 사이트는 포트폴리오용으로 만들어진 사이트로 모든 콘텐츠는 사실과 다를 수 있으며 상업적인 목적으로 제작되지 않았음을 밝힙니다.</p>
+	</div>
+	</address>
+	</div>
+</body>
+</html>

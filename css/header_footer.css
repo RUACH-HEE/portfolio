@@ -5,7 +5,7 @@ header{
 }
 
 header>.logo{
-	width:95px; height:52px;
+	width:96x; height:52px;
 	position:fixed;
 	left:30px; top:30px;
 	z-index:900;
@@ -13,7 +13,7 @@ header>.logo{
 
 
 header>.logo>h1{
-	width:95px; height:52px;
+	width:96px; height:52px;
 	text-indent:-9999px;
 	background:url(../img/logo.png) no-repeat;
 }
@@ -21,7 +21,7 @@ header>.logo>h1{
 
 header>.logo>h1>a{
 	display:block;
-	width:95px; height:52px;
+	width:96px; height:52px;
 }
 
 
@@ -31,7 +31,7 @@ nav{
 	right:-50%; top:0px;
 	width:50%; height:100%;
 	z-index:900;
-	background:#000;
+	background:#373738;
 	transition:all 0.8s;
 }
 
@@ -41,7 +41,7 @@ nav>a{
 	padding:0px 5px;
 	position:absolute; left:-60px; top:50%; z-index:900;
 	transform:rotate(90deg);
-	background:#111;
+	background:#414143;
 	color:#fff;
 	font-family: 'Poppins';
 	border:0px none;
@@ -128,7 +128,7 @@ footer .open{
 	position:absolute; left:875px; top:50%;
 	cursor:pointer;
 	padding-bottom:6px;
-	background:#111; color:#fff;
+	background:#414143; color:#fff;
 	font-family:'Poppins';
 	border:0px none;
 	}
@@ -139,12 +139,12 @@ footer .open{
 	transform:rotate(-90deg);
 	position:absolute; left:900px; top:50%;
 	cursor:pointer;
-	background:#111; color:#fff;
+	background:#314143; color:#fff;
 	padding:0px 5px;
 	}
 
 footer .pannel{
-	background:#111;
+	background:#373738;
 	width:900px;
 	height:100%;
 	position:absolute; z-index:900;
@@ -202,11 +202,6 @@ footer .pannel .foot_wrap .basic .education p{
 	font-family:'Nanum Gothic';
 	letter-spacing:-1.5px;
 	line-height:24px;
-}
-footer .pannel .foot_wrap .basic .contact a{
-	display:block;
-	color:#fff;
-	padding-left:20px;
 }
 
 footer .pannel .foot_wrap .basic .interest p{

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="KO">
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="신한카드,신한,카드,리뉴얼,포트폴리오,손민희포트폴리오">
+  <meta name="Description" content="신한카드 리뉴얼">
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <link rel="stylesheet" type="text/css" href="css/base.css"/>
+  <title>SONMINHEE PORTFOLIO</title>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+
+  <script src="js/prefixfree.min.js"></script>
+  <script src="js/slick/slick.min.js"></script>
+  <link rel="stylesheet" href="js/slick/slick.css"/>
+  <link rel="stylesheet" href="js/slick/slick-theme.css"/>
+
+	<!-- jQuery library (served from Google) -->
+	<!-- script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script-->
+	<!-- bxSlider Javascript file -->
+	<!--[if lt IE9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/css3-mediaqueries.min.js"></script>
+	<![end if]-->
+ <script type="text/javascript">
+ $(document).on('ready', function() {
+ $('.autoplay').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  fade:true,
+  dots:true,
+  arrows:false,
+  infinite:true
+});
+
+ $('.card_bot').slick({
+  slidesToShow: 2,
+  slidesToScroll: 2,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  fade:false,
+  dots:true,
+  arrows:false
+});
+
+})
+</script>
+
+ </head>
+
+ <body>
+<div id="header">
+	<div class="header_top">
+		<div class="tnb">
+			<ul class="login">
+				<li><a href="#">로그인</a></li>
+				<li><a href="#">회원가입</a></li>
+			</ul>
+			<ul class="sh_cus">
+				<li><a href="#">개인</a></li>
+				<li><a href="#">법인</a></li>
+				<li><a href="#">가맹점</a></li>
+				<li><a href="#">개인사업자</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_header">
+		<div class="nav">
+			<div class="logo_area">
+			<h1>신한카드</h1>
+			</div>
+			<div class="gnb">
+				<ul>
+					<li><a href="#">마이페이지</a></li>
+					<li><a href="#">카드</a></li>
+					<li><a href="#">금융</a></li>
+					<li><a href="#">포인트</a></li>
+					<li><a href="#">서비스</a></li>
+					<li><a href="#">모바일</a></li>
+					<li class="last"><a href="#">고객센터</a></li>
+				</ul>
+			</div>
+			<div class="search_box">
+				<form action="/" method="get"></form>
+				<input type="text" id="search" maxlength="20"/>
+				<button type="submit">검색</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="container">
+	<div id="con_top">
+		<div class="mys">
+			<div class="member">
+				<h2>MY 신한카드</h2>
+				<button type="submit" id="join">회원가입</button>
+				<div class="but_wrap">
+					<button type="submit" id="id">아이디</button>
+					<button type="submit" id="certi">공인인증서</button>
+				</div>
+				<p>
+				<a href="#">아이디찾기</a>
+				<a href="#">비밀번호 찾기</a>
+				</p>
+			</div>
+			<div class="quick_btns">
+				<ul>
+					<li><a href="#">
+					<span>이번달 명세서</span></a></li>
+
+					<li><a href="#">
+					<span>회원정보변경</span></a></li>
+
+					<li><a href="#">
+					<span>이용한도조회</span></a></li>
+
+					<li><a href="#">
+					<span>이용금액결제</span></a></li>
+
+					<li><a href="#">
+					<span>이용내역조회</span></a></li>
+
+					<li><a href="#">
+					<span>다음달 결제예정</span></a></li>
+
+					<li><a href="#">
+					<span>전자민원접수</span></a></li>
+
+					<li><a href="#">
+					<span>포인트조회</span></a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="visual autoplay">
+			<div><img src="img/visual/main_visual1.jpg" alt="신한 판 가입회원 800만 돌파 감사이벤트"></div>
+			<div><img src="img/visual/main_visual2.jpg" alt="4대 사회보험 신한카드 자동납부 이벤트"></div>
+			<div><img src="img/visual/main_visual3.jpg" alt="신한 판 4월 신규가입 3000포인트 적립!"></div>
+			<div><img src="img/visual/main_visual4.jpg" alt="갤럭시 s8 18만원 청구할인 추가사은품 증정"></div>
+		</div>
+
+
+		<div class="credit">
+			<div class="credit_top">
+				<h2>금융안내·신청</h2>
+				<div class="autoplay">
+					<div>
+					<img src="img/credit/credit_img1.jpg" alt="단기카드대출편리하게">
+					<h3>현금이 필요할 때 내 계좌로 쏙!<br/>
+					결제도 한번에 OK!</h3>
+					</div>
+					<div>
+					<img src="img/credit/credit_img2.jpg" alt="365일 빠른대출">
+					<h3>서류없이 빠른 대출은 기본~ <br/>
+						365일 언제나,휴일에도 신청 OK!</h3>
+					</div>
+				</div>
+			</div>
+			<div class="credit_bot">
+				<ul>
+					<li><a href="#">
+						<span class="credit_s_tit">24시간 365일 편리하게</span>
+						<span >단기카드대출 (현금서비스)</span>
+						</a>
+					</li>
+					<li><a href="#">
+						<span class="credit_s_tit">신청서 No! 심사기간No!</span>
+						<span >장기카드대출 (카드론)</span>
+						</a>
+					</li>
+					<li><a href="#">
+						<span class="credit_s_tit">신한카드가 없어도 OK!</span>
+						<span >MF일반대출 (신용대출)</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="card">
+			<div class="card_top">
+				<h2>카드안내 신청</h2>
+				<ul>
+					<li><a href="#">카드신청</a></li>
+					<li><a href="#">내게맞는 카드찾기</a></li>
+					<li><a href="#">주요카드 한눈에보기</a></li>
+					<li><a href="#">카드사용등록</a></li>
+				</ul>
+			</div>
+			<div class="card_bot ">
+				<div>
+				<img src="img/card/card1.jpg" alt="신세계 신한카드">
+				<h3>신세계 신한카드</h3>
+				</div>
+
+				<div>
+				<img src="img/card/card2.jpg" alt="신한카드 EDU">
+				<h3>신한카드 EDU</h3>
+				</div>
+
+				<div>
+				<img src="img/card/card3.jpg" alt="Triplus 체크">
+				<h3>Triplus 체크</h3>
+				</div>
+
+				<div>
+				<img src="img/card/card4.jpg" alt="Air Platinum#">
+				<h3>Air Platinum#</h3>
+				</div>
+
+				<div>
+				<img src="img/card/card5.jpg" alt="RPM+ Platinum#">
+				<h3>RPM+ Platinum#</h3>
+				</div>
+
+				<div>
+				<img src="img/card/card6.jpg" alt="아시아나 신한카드 Air 1.5">
+				<h3>아시아나 신한카드 Air 1.5</h3>
+				</div>
+
+				<div>
+				<img src="img/card/card7.jpg" alt="신한카드 B.Big(삑)">
+				<h3>신한카드 B.Big(삑)</h3>
+				</div>
+
+				<div>
+				<img src="img/card/card8.jpg" alt="EDIYA 신한카드 체크">
+				<h3>EDIYA 신한카드 체크</h3>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div id="con_bot">
+		<div class="fan">
+			<div class="bot_inner">
+			<h2>신한 FAN</h2>
+			<ul>
+				<li><a href="#">FAN 가입/등록</a></li>
+				<li><a href="#">안드로이드용 앱 다운</a></li>
+				<li><a href="#">아이폰용 앱 다운</a></li>
+			</ul>
+			</div>
+		</div>
+
+
+		<div class="shop">
+			<div class="bot_inner">
+			<h2>올댓쇼핑</h2>
+			<div class="shop_wrap  autoplay">
+				<div class="ph"><a href="#">
+				<span class="shop_s_tit">휴대폰 구매찬스!</span>
+				<span>할인에<br/>
+					      무이자 할부까지!</span>
+				</a></div>
+
+				<div class="super"><a href="#">
+				<span class="shop_s_tit">깜빡하면 놓칠 슈퍼프라이스</span>
+				<span>슈퍼프라이스가<br/>
+					      초특가를 모두 모았다</span>
+				</a></div>
+
+				<div class="allthat"><a href="#">
+				<span class="shop_s_tit">올댓라이프 부킹닷컴</span>
+				<span>부킹닷컴 최대 50만 포인트<br/>
+					      적립 이벤트</span>
+				</a></div>
+			</div>
+			</div>
+		</div>
+
+		<div class="cus">
+			<div class="bot_inner">
+			<h2>금융소비자보호</h2>
+			<div class="cus_wrap  autoplay">
+				<div class="fine"><a href="#">
+					<span>금융소비자 정보포털<br/>
+					파인(FINE)</span>
+				</a></div>
+
+				<div class="plz"><a href="#">
+					<span>보이스피싱 합동경보 발령!<br/>
+					각별한 주의 부탁드립니다.</span>
+				</a></div>
+
+				<div class="pt"><a href="#">
+					<span>소비자보호포털<br/>
+					금융소비자보호 종합창구</span>
+				</a></div>
+			</div>
+			</div>
+		</div>
+
+		<div class="notice">
+			<div class="bot_inner">
+			<h2>공지 상품서비스변경안내</h2>
+			<div class="notice_txt">
+			<ul>
+				<li><a href="#">한국스탠다드차타드은행 시스템 작업으로 인한 서비스 일시 중단 안내</a></li>
+				<li><a href="#">SK증권 시스템 작업으로 인한 서비스 일시 중단 안내</a></li>
+				<li><a href="#">2017 제3기 아름人금융탐험대 합격자 발표</a></li>
+				<li><a href="#">모바일티머니 후불형 서비스 간편신청 일시 중단 안내</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+</div>
+
+<div id="footer">
+	<div class="foot_inner">
+		<ul class="tel">
+			<li><a href="#">고객센터 1544-7000</a></li>
+			<li><a href="#">해외상담 82-1544-7000</a></li>
+			<li><a href="#">카드분실신고 1544-7200</a></li>
+			<li><a href="#">카드신청 1661-8599</a></li>
+			<li><a href="#">금융신청 1588-0303</a></li>
+			<li><a href="#">할부금융 1544-7100</a></li>
+		</ul>
+		<div class="address_info">
+				<ul>
+					<li><a href="#">회사소개</a></li>
+					<li><a href="#">지배구조</a></li>
+					<li><a href="#">투자정보</a></li>
+					<li><a href="#">ENGLISH SITE</a></li>
+					<li><a href="#">이용약관</a></li>
+					<li><a href="#">이용안내</a></li>
+					<li><a href="#">고객권리안내문</a></li>
+					<li><a href="#">개인정보처리방침</a></li>
+					<li><a href="#">전자민원접수</a></li>
+					<li><a href="#">상품공시실</a></li>
+				</ul>
+				<address>
+					서울특별시 중구 소공로 70(충무로 1가, 포스트타워) 대표이사 임영진 사업자등록번호 202-81-48079<br/>
+					Copyright &copy; 이사이트는 포트폴리오사이트로 실제사이트와 무관하며 상업적으로 만들어지지 않았음을 밝힙니다. 모든 디자인은 손민희가 하였습니다.
+				</address>
+		</div>
+</div>
+
+
+</div>
+
+ </body>
+ </html>

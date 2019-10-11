@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url(header.css);
+@import url(footer.css);
+
+/*
+ * Nanum Square Web Fonts
+ * https://github.com/hiun/NanumSquare
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com)
+ */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@font-face {
+  font-family: 'Nanum Square';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/NanumSquareR.eot);
+  src: local('Nanum Square Regular'),
+       local('NanumSquareR'),
+       url(/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareR.woff2) format('woff2'),
+       url(/font/NanumSquareR.woff) format('woff'),
+       url(/font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Square bold';
+  font-style: bold;
+  font-weight: 700;
+  src: url(/font/NanumSquareB.eot);
+  src: local('Nanum Square Bold'),
+       local('NanumSquareB'),
+       url(/font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareB.woff2) format('woff2'),
+       url(/font/NanumSquareB.woff) format('woff'),
+       url(/font/NanumSquareB.ttf) format('truetype');
+}
+
+
+/*----------------------------로그인 전체 선언-----------------------------------------*/
+body{
+	background:url(../login/img/bg.jpg) no-repeat;
+	background-size:1920px 1080px;
+	font-weight:normal;
+  font-size:14px;
+	font-family:'Nanum Square','Nanum Gothic','Malgun Gothic','맑은 고딕', sans-serif;
+	letter-spacing:-1px;
+}
+
+#login{width:100%; height:700px; margin-top:120px;}
+
+#login>h2{
+	width:147px; height:148px;
+	background:url(../img/nfimg/logo_large.jpg) no-repeat;
+	background-size:147px 148px;
+	margin:0px auto;
+	text-indent:-99999px;
+	margin-top:200px;
+	opacity:0.8;
+}
+
+#login>.login_wrap{
+	width:431px; height:349px;
+	margin:30px auto;
+	background:rgba(255,255,255,0.8);
+}
+
+#login>.login_wrap>p{
+	padding-top:17px;
+	margin-bottom:14px;
+	text-align: center;
+	line-height:22px;
+	letter-spacing:-1px;
+}
+
+#login>.login_wrap>.input_login{
+width:350px; height:45px; margin:0px auto;
+border-bottom:1px solid #ccc;
+margin-bottom:10px;
+}
+
+#login>.login_wrap>.input_login>input{
+	text-indent:5px;
+	width:100%; color:#595959;
+	line-height:45px;
+	border:none;
+	background:rgba(255,255,255,0);
+	letter-spacing:-1.5px;
+}
+
+#login>.login_wrap>.check{
+	padding-left:40px;
+	letter-spacing:-1px;
+}
+
+#login>.login_wrap>.login_btn{
+	width:350px; height:45px;
+	margin:20px auto;
+}
+#login>.login_wrap>.login_btn>input{
+	width:100%; height:100%;
+	background: #fc0;
+	border:0px none;
+	font-size:15px;
+	text-align:center;
+	letter-spacing:-0.5px;
+}
+
+#login>.login_wrap>.last_box{
+	width:350px; height:45px;
+	margin:0px auto; letter-spacing: -1px;
+}
+
+#login>.login_wrap>.last_box>.join{
+	float:left;
+}
+
+#login>.login_wrap>.last_box>.log_search{
+	float:right;
+}
+
+#login>.login_wrap>.last_box>.log_search>a{
+display:block; float:left;
+padding-left:10px;}

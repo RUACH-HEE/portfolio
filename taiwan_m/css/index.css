@@ -1,0 +1,453 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+*{
+  font-family:'Noto Sans KR',"Malgun Gothic","맑은 고딕", sans-serif;
+}
+
+img{
+  border:0px none;
+  padding:0px;
+}
+header{
+  width:100%;
+  position:relative;
+  z-index:99;
+}
+
+header .header_wrap{
+  width:100%;
+  height:60px;
+}
+
+header .header_wrap>.menu_bar{
+  width:40px; height:40px;
+  position:absolute;
+  right:10px; top:15px; z-index:110;
+}
+
+header .header_wrap>.menu_bar>a{
+  display:block;
+  width:100%; height:100%;
+}
+header .header_wrap>.menu_bar>a>span{
+  display:block;
+  width:40px; height:5px;
+  background-color:#222;
+  margin-top:10px;
+}
+
+.none{
+  display:none !important;
+}
+.trans{
+  transform-origin:35%;
+  transform: rotate(45deg);
+  position:absolute;
+  left:0px; top:10px;
+}
+.trans2{
+  transform-origin:30%;
+  transform: rotate(-45deg);
+  position:absolute;
+  left:0px; top:10px;
+}
+.active{
+  left:0px;
+}
+header .header_wrap>.menu_bar>a>.one{
+  margin-top:0px;
+}
+header nav{
+  width:100%; height:1000px;
+  position:absolute;
+  left:-100%; top:0px; z-index:100;
+  background-color:#fff;
+}
+
+header nav .top_bg{
+  width:100%;
+  height:60px;
+  background:#f36822;
+}
+
+header nav>ul{
+  width:100%;
+}
+
+header nav>ul>li{
+  width:100%; height:45px;
+  line-height:45px;
+  border-bottom: 1px solid #ccc;
+  font-weight:bold;
+  font-size:15px;
+  text-indent:20px;
+}
+
+header nav>ul>li>a{
+  display:block;
+  width:100%; height:100%;
+}
+.change{
+  background-position:0px 12px;
+}
+header nav>ul>li>a>span{
+  display:block;
+  width:10px; height:6px;
+  float:right;
+  text-indent:-9999px;
+  background:url(../img/sr.png) no-repeat;
+  background-position:0px 0px;
+  margin-top:20px;
+  margin-right:20px;
+}
+header nav>ul>li>.sub{
+  width:100%; height:200px;
+  background-color:#ccc;
+  display:none;
+}
+
+.block{
+  display:block;
+}
+
+header nav>ul>li>.sub>li{
+  width:100%; height:30px;
+  line-height:30px;
+}
+
+header nav>ul>li>.sub>li>a{
+  display:block;
+  width:100%; height:100%;
+}
+
+header h1{
+  width:128px; height:29px;
+  margin:0px auto;
+  padding-top:15px;
+}
+header h1>a{
+  display:block;
+  width:100%; height:100%;
+  text-indent:-9999px;
+  background:url(../img/logo.png) center center no-repeat;
+}
+
+/*--------------header 끝------------------*/
+
+
+/*--------------visual slide 시작----------*/
+#slide{
+  width:100%;
+  height:360px;
+}
+
+#slide .slide_wrap{
+  width:100%;
+  height:360px;
+  position:relative;
+}
+
+#slide .slide_wrap>ul{
+  width:100%;
+  height:100%;
+}
+
+#slide .slide_wrap>ul>li{
+  width:100%;
+  height:100%;
+}
+
+#slide .slide_wrap>ul>li>img{
+  width:100%; height:100%;
+  display:block;
+}
+
+#slide .slide_text{
+}
+
+#slide .slide_text>h2>span{
+	font-size:24px;
+}
+
+#slide .slide_text>img{
+	position:absolute; left:50%; top:36%;
+	margin-left:-157px;
+  width:315px; height:72px;
+}
+/*--------------slide 끝------------------*/
+
+/*--------------hot place 시작------------*/
+
+#hot_place{
+  width:100%;
+}
+
+#hot_place .hot_place_wrap{
+  width:100%;
+}
+
+#hot_place .hot_place_wrap h2{
+  text-align:center;
+  font-size:18px; font-weight:bold;
+  margin-top:20px; letter-spacing:-1px;
+}
+
+#hot_place .hot_place_wrap p{
+  text-align:center;
+  font-size:15px; letter-spacing:-1.5px;
+  margin-top:10px; font-weight:600;
+}
+
+#hot_place .hot_place_wrap .hot_place_list{
+  width:100%; margin-top:20px;
+}
+
+#hot_place .hot_place_wrap .hot_place_list>ol{
+  width:100%;
+}
+
+#hot_place .hot_place_wrap .hot_place_list>ol>.best1{
+  width:100%; height:360px;
+}
+
+#hot_place .hot_place_wrap .hot_place_list>ol>.best1>a{
+  display:block;
+  width:100%; height:100%;
+  background:url(../img/hot/hot1.jpg) center center no-repeat;
+}
+
+#hot_place .hot_place_wrap .hot_place_list>ol>li .txt_box{
+  display:block;
+  width:50%; height:170px;
+  text-align:center; letter-spacing:-1px;
+  font-weight:bold;
+  line-height:35px; padding-top:54px;
+}
+
+#hot_place .hot_place_wrap .hot_place_list>ol>li>a>img{
+  display:block;
+  width:50%; height:224px;
+}
+
+
+#hot_place .hot_place_wrap .hot_place_list>ol>li{
+  width:100%; height:224px;
+}
+#hot_place .hot_place_wrap .hot_place_list>ol>li>a{
+  width:100%; height:100%;
+}
+#hot_place .hot_place_wrap .hot_place_list>ol>.best2>a>img{
+  float:left;
+}
+#hot_place .hot_place_wrap .hot_place_list>ol>.best2>a>.txt_box{
+  float:right;
+}
+
+#hot_place .hot_place_wrap .hot_place_list>ol>.best3>a>img{
+  float:right;
+}
+#hot_place .hot_place_wrap .hot_place_list>ol>.best3>a>.txt_box{
+  float:left;
+}
+
+#hot_place .hot_place_wrap .hot_place_list>ol>.best4>a>img{
+  float:left;
+}
+#hot_place .hot_place_wrap .hot_place_list>ol>.best4>a>.txt_box{
+  float:right;
+}
+
+/*--------------hot place 끝------------*/
+
+/*--------------them 테마 시작------------*/
+
+#them{
+  width:100%;
+}
+
+#them .them_wrap{
+  width:100%; height:530px;
+  overflow:hidden;
+}
+
+#them .them_wrap h2{
+  text-align:center;
+  font-size:18px; font-weight:bold;
+  margin-top:20px; letter-spacing:-1px;
+}
+
+#them .them_wrap p{
+  text-align:center;
+  font-size:15px; letter-spacing:-1.5px;
+  margin-top:10px; font-weight:600;
+  margin-bottom:20px;
+}
+
+#them .them_wrap article{
+  width:50%; height:214px; float:left;
+  overflow:hidden;
+  position:relative;
+}
+
+#them .them_wrap article>a>img{
+  width:100%; height:100%;
+}
+#them .them_wrap article>a>span{
+  display:block;
+  position:absolute; left:0px; top:0px;
+  width:100%; height:100%;
+  background-color:rgba(0,0,0,0.3);
+  text-align:center; color:#fff;
+  line-height:214px;
+  letter-spacing:-1px; font-size:18px;
+}
+
+/*--------------them 테마 끝------------*/
+
+/*--------------tips 시작---------------*/
+
+#tips{
+  clear:both;
+  width:100%;
+}
+
+#tips h2{
+  text-align:center;
+  font-size:18px; font-weight:bold;
+  margin-top:20px; letter-spacing:-1px;
+}
+
+#tips p{
+  text-align:center;
+  font-size:15px; letter-spacing:-1.5px;
+  margin-top:10px; font-weight:600;
+  margin-bottom:20px;
+}
+
+#tips ul{
+  width:100%;
+}
+
+#tips ul>li{
+  width:50%;
+  float:left;
+  position:relative;
+}
+
+#tips ul>li>a>img{
+  width:100%; height:100%;
+}
+
+#tips ul>li>a>span{
+    display:block;
+    width:100%; height:30px;
+    background-color:rgba(244,244,244,0.8);
+    position:absolute; bottom:0px; left:0px;
+    text-align:center;
+    letter-spacing:-1px;
+    border-top:1px solid #ccc;
+}
+
+/*--------------tips 끝---------------*/
+
+/*--------------footer 시작---------------*/
+
+footer{
+  clear:both;
+  width:100%;
+  padding-top:20px;
+}
+
+
+footer>.link{
+  width:100%;
+}
+footer>.link>ul{
+  width:100%;
+  border-top:1px solid #ccc;
+  border-bottom:1px solid #ccc;
+}
+footer>.link>ul>li{
+  width:50%;
+  height:40px;
+  float:left;
+  text-align:center;
+  background:#f9f9f9;
+  line-height:40px;
+  border-bottom:1px solid #ccc;
+}
+footer>.link>ul>li>a{
+  font-size:14px;
+  letter-spacing:-1px;
+}
+
+footer address{
+  width:100%; height:100px;
+  clear:both;
+  background-color:#222;
+  color:#fff;
+  font-style: normal;
+  font-size:14px; letter-spacing:-1px;
+  text-align:center;
+}
+
+footer address .ad_wrap{
+  width:100%;
+  padding-top:10px;
+}
+
+/*--------------footer 끝---------------*/
+
+
+
+
+@media screen and (max-width:400px){
+
+
+
+
+  #hot_place .hot_place_wrap .hot_place_list>ol>li .txt_box{
+    display:block;
+    width:50%; height:130px;
+    text-align:center; letter-spacing:-1px;
+    font-weight:bold;
+    line-height:30px;
+    padding-top:20px;
+  }
+
+  #hot_place .hot_place_wrap .hot_place_list>ol>li>a>img{
+    display:block;
+    width:50%; height:130px;
+  }
+
+  #hot_place .hot_place_wrap .hot_place_list>ol>li{
+    width:100%; height:130px;
+    overflow:hidden;
+  }
+
+  #them .them_wrap{
+    width:100%; height:390px;
+    overflow:hidden;
+  }
+
+
+  #them .them_wrap article{
+    width:50%; height:134px; float:left;
+    overflow:hidden;
+  }
+
+  #them .them_wrap article>a>img{
+    width:100%; height:100%;
+  }
+
+  #them .them_wrap article>a>span{
+    display:block;
+    position:absolute; left:0px; top:0px;
+    width:100%; height:100%;
+    background-color:rgba(0,0,0,0.3);
+    text-align:center; color:#fff;
+    line-height:134px;
+    letter-spacing:-1px; font-size:18px;
+  }
+}

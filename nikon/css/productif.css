@@ -1,0 +1,456 @@
+@charset "utf-8";
+@import url(header.css);
+@import url(footer.css);
+
+/*
+ * Nanum Square Web Fonts
+ * https://github.com/hiun/NanumSquare
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com)
+ */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@font-face {
+  font-family: 'Nanum Square';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/NanumSquareR.eot);
+  src: local('Nanum Square Regular'),
+       local('NanumSquareR'),
+       url(/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareR.woff2) format('woff2'),
+       url(/font/NanumSquareR.woff) format('woff'),
+       url(/font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Square bold';
+  font-style: bold;
+  font-weight: 700;
+  src: url(/font/NanumSquareB.eot);
+  src: local('Nanum Square Bold'),
+       local('NanumSquareB'),
+       url(/font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareB.woff2) format('woff2'),
+       url(/font/NanumSquareB.woff) format('woff'),
+       url(/font/NanumSquareB.ttf) format('truetype');
+}
+
+
+/*----------------------------제품정보 전체 선언-----------------------------------------*/
+body{background: #f4f4f4;
+	font-weight:normal;
+  font-size:14px;
+	font-family:'Nanum Square','Nanum Gothic','Malgun Gothic','맑은 고딕', sans-serif;
+}
+
+/*----------------------------제품정보 배너--------------------------------------------*/
+
+#if_banner{width:100%; height:570px; }
+#if_banner>h2{display:none;}
+#if_banner>.box_banner{width:100%; height:570px; overflow:hidden;}
+#if_banner>.box_banner>img{width:1920px; height:570px;}
+
+
+/*----------------------------제품정보 신제품--------------------------------------------*/
+#if_newpd{
+	width:990px; height:543px;
+	margin:50px auto; overflow:hidden;
+}
+
+#if_newpd div{float:left; margin-right:10px;}
+
+#if_newpd>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px; text-align:center;
+	padding-bottom:5px;
+}
+
+#if_newpd>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+	font-family:'Nanum Gothic';
+}
+
+#if_newpd>span{
+	display:block;
+	width:64px; height:3px;
+	background:#fc5; margin:15px auto;
+	}
+
+/*-----------box---------------*/
+#if_newpd>.newpd_wrap{
+	width:990px; height:543px;
+	margin:25px auto;
+	overflow:hidden;}
+
+#if_newpd>.newpd_wrap div{
+	width:320px; height:380px;
+	background: #ebebeb; line-height:30px;
+	overflow:hidden; cursor:pointer;}
+
+#if_newpd>.newpd_wrap div>b{
+		display:block;
+		font-size:28px; font-weight:bold;
+		letter-spacing:-2px;
+		color:#222;
+		margin:20px 0px 0px 15px;
+}
+
+#if_newpd>.newpd_wrap div>p{
+	font-size:15px;
+	letter-spacing:-1px;
+	padding-left:15px;
+	font-weight:bold;
+	margin-top:5px;
+	color:#333;
+}
+
+#if_newpd>.newpd_wrap div>span{
+	display:block;
+	width:72px; height:22px;
+	margin-left:15px;
+	margin-top:15px;
+	padding:1px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	font-size:13px; text-align:center;
+	line-height:22px;
+	letter-spacing:-1.5px;
+	transition:all 0.3s;
+}
+
+
+#if_newpd>.newpd_wrap div>a{
+	display:block;
+	width:320px; height:380px;
+}
+
+
+#if_newpd>.newpd_wrap div:hover img{
+	transform:scale(1.02);
+	transition:all 0.4s;
+}
+
+#if_newpd>.newpd_wrap>.newpd1>a>img{
+	display:block; padding-left:50px;
+	transition:all 0.4s;
+
+}
+
+#if_newpd>.newpd_wrap>.newpd2>a>img{
+	width:320px; height:240px;
+	transition:all 0.4s;
+}
+
+#if_newpd>.newpd_wrap>.newpd3>a>img{
+width:300px; height:250px; padding-left:80px;
+transition:all 0.4s;
+}
+
+
+/*----------------------------제품정보 카테고리--------------------------------------------*/
+#if_category{
+	width:1320px; height:870px;
+	margin:0px auto;}
+
+#if_category>h2{
+
+font-size:30px; font-weight:bold;
+letter-spacing:-1px; text-align:center;
+padding-bottom:5px;
+}
+
+#if_category>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+	font-family: 'Nanum Gothic';
+}
+
+#if_category>span{
+	display:block;
+	width:64px; height:3px;
+	background:#fc5; margin:15px auto;
+}
+
+#if_category>.box_category{
+	width:1320px; height:850px;
+	overflow:hidden;
+	margin:40px auto;
+}
+
+#if_category>.box_category>ul{text-align:center;}
+
+#if_category>.box_category>ul>li{
+	float:left; width:320px; height:320px;
+	margin-right:10px; margin-bottom:25px;
+	position:relative; background: #ebebeb;
+	overflow:hidden; cursor:pointer;}
+
+
+#if_category>.box_category>ul>li>p{
+	margin-top:70px; font-size:18px;
+	font-weight:bold;
+	letter-spacing:-2px;
+	color:#222;
+}
+
+#if_category>.box_category>ul>li>a>img{}
+
+#if_category>.box_category>ul>li>.category_text{
+	width:320px; height:320px;
+	position:absolute; left:0px; top:0px;
+	overflow:hidden;
+	display:none;
+}
+
+#if_category>.box_category>ul>li:hover>p{
+	text-indent:-9999px;
+}
+
+#if_category>.box_category>ul>li:hover>.category_text{
+display:block;
+
+position:absolute; left:0px; top:0px;
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+50,000000+100&0.9+0,0.8+50,0.9+100 */
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.8) 50%, rgba(0,0,0,0.9) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.8) 50%,rgba(0,0,0,0.9) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(0,0,0,0.9) 0%,rgba(0,0,0,0.8) 50%,rgba(0,0,0,0.9) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6000000', endColorstr='#e6000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+#if_category>.box_category>ul>li>.category_text>p{
+	margin-top:70px; font-size:18px;
+	letter-spacing:-1.3px;
+	font-weight:bold;
+	line-height:23px;
+	color:#ddd;
+}
+
+#if_category>.box_category>ul>li>.category_text>p:nth-of-type(2){
+	font-size:14px;
+	margin-top:45px;
+	font-weight:normal;
+	color:#f5f5f5;
+}
+
+#if_category>.box_category>ul>li>.category_text>span{
+	display:block;
+	width:72px; height:22px;
+	position:absolute; left:124px; top:255px;
+
+	padding:1px;
+
+	border-top:1px solid #f9f9f9;
+	border-bottom:1px solid #f9f9f9;
+
+	font-size:12px;
+	text-align:center;
+	line-height:22px;
+
+	color:#fff;
+}
+
+/*----------------------------제품정보 베스트제품--------------------------------------------*/
+#if_toppd{
+		width:990px; height:658px;
+		margin:0px auto; overflow:hidden;
+		position:relative;
+}
+
+#if_toppd>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px; text-align:center;
+	padding-bottom:5px;
+}
+#if_toppd>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+	font-family:'Nanum Gothic';
+}
+
+#if_toppd>span{
+	display:block;
+	width:64px; height:3px;
+	background:#fc5; margin:15px auto;
+}
+
+#if_toppd div>b{
+	display:block;
+	font-size:40px;
+	letter-spacing:-2px;
+	color:#333;
+}
+#if_toppd div>p{
+	font-size:15px;
+	letter-spacing:-2px;
+	color:#444;
+}
+#if_toppd div{
+	cursor:pointer;
+}
+
+#if_toppd div:hover img{
+	transform:scale(1.02);
+	transition:all 0.4s;
+}
+
+#if_toppd div span{
+	display:block;
+	width:20px; height:20px;
+	margin-left:20px;
+	margin-top:15px;
+	padding:3px;
+	font-size:28px;
+	text-align:center;
+	line-height:18px;
+}
+
+/*------------toppd 1------*/
+#if_toppd>.toppd1{
+	width:320px; height:445px;
+	background: #ebebeb;
+	position:absolute; left:0px; top:149px;
+	overflow:hidden;
+
+}
+
+#if_toppd>.toppd1 img{padding-left:80px; transition:all 0.4s;}
+#if_toppd>.toppd1	b{margin-top:20px; padding-left:20px;}
+#if_toppd>.toppd1	p{padding-left:20px;}
+
+/*-----------toppd 2---------------*/
+
+#if_toppd>.toppd2{
+	width:642px; height:214px;
+	background:#ebebeb;
+	position:absolute; left:348px; top:146px;
+	overflow:hidden;
+	text-align: center;
+}
+
+#if_toppd>.toppd2	b{margin-top:20px; padding-left:290px;}
+#if_toppd>.toppd2	p{padding-left:220px;}
+#if_toppd>.toppd2 span{
+	display:block;
+	width:20px; height:20px;
+	margin-left:355px;
+	margin-top:15px;
+	padding:3px;
+	font-size:28px;
+	text-align:center;
+	line-height:18px;
+}
+
+#if_toppd>.toppd2 img{
+	display:block;
+	position:absolute; left:24px; top:-15px;
+	transition:all 0.4s;
+}
+
+
+/*-----------toppd 3---------------*/
+#if_toppd>.toppd3{
+	width:642px; height:214px;
+	background: #ebebeb;
+	position:absolute; left:348px; top:377px;
+	overflow:hidden;
+}
+
+#if_toppd>.toppd3	b{margin-top:20px; padding-left:20px;}
+#if_toppd>.toppd3	p{padding-left:20px;}
+
+#if_toppd>.toppd3>span{
+	display:block;
+	width:20px; height:20px;
+	margin-left:15px;
+	margin-top:15px;
+	padding:3px;
+	font-size:28px;
+	text-align:center;
+	line-height:18px;
+}
+
+#if_toppd>.toppd3 img{
+	display:block;
+	position:absolute;
+	left:250px; top:20px;
+	transition:all 0.4s;
+}
+
+/*--------------------------------------제품정보 이벤트--------------------------------*/
+#if_event{width:100%; height:360px; margin-bottom:30px;}
+
+#if_event>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px; text-align:center;
+	padding-bottom:5px;}
+
+#if_event>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+	font-family:'Nanum Gothic';
+}
+
+#if_event>span{
+	display:block;
+	width:64px; height:3px;
+	background:#fc5; margin:15px auto;
+}
+
+#if_event>.if_ebox{
+	width:1320px; height:250px; margin:20px auto;
+	overflow:hidden;
+}
+
+#if_event>.if_ebox>ul{width:1320px; height:250px;}
+
+#if_event>.if_ebox>ul>li{
+	float:left; width:430px; height:250px;
+	margin-right:10px;margin-bottom:25px;
+	position:relative;
+	overflow:hidden;
+}
+
+#if_event>.if_ebox>ul>li>img{
+	width:430px; height:250px;
+}
+
+#if_event>.if_ebox>ul>li>.if_text{
+	width:430px; height:155px;
+	position:absolute; left:0px; top:147px;
+	background:url(../img/bg/list_bg.png) repeat; color:#fff;
+	transition-duration:0.3s;
+	overflow:hidden; cursor:default;
+}
+
+#if_event>.if_ebox>ul>li:hover>.if_text{
+	width:430px; height:155px;
+	position:absolute; left:0px; top:95px;
+	background-color:#333; color:#fff;
+	transition-duration:0.3s;
+}
+
+#if_event>.if_ebox>ul>li>.if_text>span{}
+
+#if_event>.if_ebox>ul>li>.if_text>p:first-child{
+padding-top:5px;
+}
+
+#if_event>.if_ebox>ul>li>.if_text>p{
+	font-size:14px; letter-spacing:-1px;
+	margin:10px auto; padding-left:20px;
+}
+
+#if_event>.if_ebox>ul>li>.if_text>a{
+	display:block; width:84px; height:21px;
+	margin:20px auto; text-align:center;
+	background:#fff; line-height:21px; font-weight:700;
+	font-size:13px; letter-spacing:-1px;
+	border-radius:10px;
+}
+
+#if_event>.if_ebox>ul>li>.if_text>a:hover{
+background:#fc0;
+}

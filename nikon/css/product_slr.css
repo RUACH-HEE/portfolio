@@ -1,0 +1,105 @@
+@charset "utf-8";
+@import url(font/NanumSquareR.eot);
+@import url(font/NanumSquareR.woff);
+@import "base.css";
+@import "header.css";
+@import "footer.css";
+@import "location.css";
+@font-face {
+ font-family: 'NanumSquare';
+ src: url(nafont/NanumSquareR.eot);
+ src: url(nafont/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+      url(nafont/NanumSquareR.woff) format('woff'),
+      url(nafont/NanumSquareR.ttf) format('truetype');
+}
+img{border:0px;}
+body{background: #f5f5f5;
+	font-weight:normal;
+	font-family:'NanumSquare',sans-serif;
+	font-size:14px;
+	background:#f4f4f4;}
+
+.pd_banner{width:100%; height:380px;}
+.pd_banner>h2{display:none;}
+.pd_banner>.pd_slide{width:100%; height:380px;
+					overflow:hidden; position:relative;}
+.pd_banner>.pd_slide>.bxslider{}
+.pd_banner>.pd_slide>.bxslider>li{
+	position:absolute; left:0px; top:0px;
+	width:100%; height:380px;}
+.pd_banner>.pd_slide>.bxslider>li>a{
+	display:block; width:100%; height:380px; }
+.pd_banner>.pd_slide>.bxslider>li>a>img{ width:100%; height:380px;}
+
+
+#slr_pd{width:100%;}
+
+#slr_pd>h2{font-size:30px; font-family:Arial;
+	letter-spacing:-2px; text-align:center;
+	padding-bottom:5px; margin-top:20px;}
+
+#slr_pd>h3{font-size:16px; letter-spacing:-1px;
+	text-align:center; padding-bottom:80px;}
+
+#slr_pd>.box_wrap{width:1320px; margin:0px auto;}
+
+#slr_pd>.box_wrap>.util{width:100%; height:30px; line-height:30px; background: #ccc;}
+#slr_pd>.box_wrap>.box_menu{width:100%; height:50px;  line-height:50px; background: #fc0;}
+#slr_pd>.box_wrap>.box_menu>ul{width:600px; height:50px;
+	margin:0px auto; text-align:center;}
+#slr_pd>.box_wrap>.box_menu>ul>li{
+	width:150px; height:50px;
+	float:left;}
+#slr_pd>.box_wrap>.box_menu>ul>li>a{}
+
+#slr_pd>.box_wrap>.view_box{width:100%; height:600px; overflow:hidden;}
+#slr_pd>.box_wrap>.view_box img{width:415px; height:325px;}
+
+/* item1 */
+#slr_pd>.box_wrap>.view_box>.item1{
+	width:1280px; height:100%;
+	overflow:hidden; margin:20px auto;}
+
+#slr_pd>.box_wrap>.view_box ul{
+	text-align:center;}
+#slr_pd>.box_wrap>.view_box ul>li{
+	float:left;	width:426px; height:300px;
+	background:rgba(0,0,0,0);}
+#slr_pd>.box_wrap>.view_box>.item1>ul>li>a{}
+#slr_pd>.box_wrap>.view_box ul>li>a>img{width:315px; height:225px;}
+#slr_pd>.box_wrap>.view_box ul>li>p{font-size:18px; font-weight: bold;}
+#slr_pd>.box_wrap>.view_box ul>li:hover{
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#191919+0,565656+69,727272+90,969696+100 */
+		background: rgb(25,25,25); /* Old browsers */
+		background: -moz-linear-gradient(top, rgba(25,25,25,1) 0%, rgba(86,86,86,1) 69%, rgba(114,114,114,1) 90%, rgba(150,150,150,1) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(25,25,25,1) 0%,rgba(86,86,86,1) 69%,rgba(114,114,114,1) 90%,rgba(150,150,150,1) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(25,25,25,1) 0%,rgba(86,86,86,1) 69%,rgba(114,114,114,1) 90%,rgba(150,150,150,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#191919', endColorstr='#969696',GradientType=0 ); /* IE6-9 */
+		transition-duration:0.8s; }
+
+#slr_pd>.box_wrap>.view_box ul>li:hover>p{
+	color:#fff; transition-duration:0.3s;}
+
+/* item2 */
+#slr_pd>.box_wrap>.view_box>.item2{
+	width:1320px; height:100%;
+	overflow:hidden; margin:20px auto;}
+/* item3 */
+#slr_pd>.box_wrap>.view_box>.item3{
+	width:1320px; height:100%;
+	overflow:hidden; margin:20px auto;}
+
+#slr_about{width:100%; height:300px;
+ overflow:hidden; background: #fff;
+}
+
+#slr_about>h2{font-size:25px; font-family:Arial;
+	letter-spacing:-2px; text-align:center;
+	padding-bottom:5px;margin-top:30px;}
+
+#slr_about>.box_about{width:1320px; height:300px; margin:30px auto; }
+#slr_about>.box_about>ul{}
+#slr_about>.box_about>ul>li{
+	float:left; width:200px; height:200px;}
+#slr_about>.box_about>ul>li>a{}
+#slr_about>.box_about>ul>li>a>img{width:180px; height:140px;}

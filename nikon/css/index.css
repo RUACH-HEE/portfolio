@@ -1,0 +1,759 @@
+@charset "utf-8";
+@import url(header.css);
+@import url(footer.css);
+/*
+ * Nanum Square Web Fonts
+ * https://github.com/hiun/NanumSquare
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com)
+ */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@font-face {
+  font-family: 'Nanum Square';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/NanumSquareR.eot);
+  src: local('Nanum Square Regular'),
+       local('NanumSquareR'),
+       url(/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareR.woff2) format('woff2'),
+       url(/font/NanumSquareR.woff) format('woff'),
+       url(/font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Square bold';
+  /*font-style: bold;*/
+  font-weight: 700;
+  src: url(/font/NanumSquareB.eot);
+  src: local('Nanum Square Bold'),
+       local('NanumSquareB'),
+       url(/font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareB.woff2) format('woff2'),
+       url(/font/NanumSquareB.woff) format('woff'),
+       url(/font/NanumSquareB.ttf) format('truetype');
+}
+
+
+/*전체 선언*/
+body{background: #f4f4f4;
+	font-weight:normal;
+  font-size:14px;
+	font-family:'Nanum Square','Nanum Gothic','Malgun Gothic','맑은 고딕', sans-serif;
+}
+
+
+@keyframes move1{
+	from{transform:translate(0,-30px); opacity:0;}
+	to{transform:translate(0,0); opacity:1;}
+	}
+
+/*--------------------------메인 비쥬얼, 이미지슬라이드 시작----------------*/
+
+#img_slide{
+	clear:both;
+  width:100%; height:570px;
+  margin:0px auto;
+}
+
+#img_slide>h2{
+  display:none;
+}
+
+#img_slide>.slide{
+	width:100%; height:570px;
+	overflow:hidden;
+	position:relative; left:0px; top:120px; z-index:80;
+  overflow: hidden;
+}
+
+#img_slide>.slide>.bxslider{}
+
+#img_slide>.slide>.bxslider>.bx_list{
+	position:absolute; left:0px; top:0px;
+	width:100%; height:570px; overflow:hidden;}
+
+#img_slide>.slide>.bxslider>li>a{
+	display:block; width:100%; height:570px; overflow:hidden;}
+
+#img_slide>.slide>.bxslider>li>a>img{
+	width:100%; height:100%;
+}
+
+/*-----------------------------이미지 슬라이드 끝---------------------------*/
+
+
+/*-------------------------신제품 new products 시작-----------------------*/
+#newpd{
+	width:100%; height:400px;
+	margin-top:150px;
+  overflow:hidden;
+	clear:both;
+}
+
+#newpd>h2{
+font-size:30px; font-weight:bold;
+letter-spacing:-1px; text-align:center;
+padding-bottom:5px;
+}
+
+#newpd>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+  font-family:'Nanum Gothic';
+}
+
+#newpd>.newpd_wrap{
+  width:1320px; margin:60px auto;
+}
+
+#newpd>.newpd_wrap>ul{
+	width:100%;
+}
+
+#newpd>.newpd_wrap>ul>li{
+	float:left;
+	width:430px; height:250px;
+	background:url(../img/newproducts/section2_bg1.jpg) no-repeat;
+	margin-right:10px;
+	position:relative;
+	overflow:hidden;
+}
+
+#newpd>.newpd_wrap>ul>li>a{
+display:block;
+width:430px; height:250px;
+position:absolute; left:0px; top:0px;
+z-index:70;
+}
+
+
+#newpd>.newpd_wrap>ul>li>.newtab{
+	display:block;
+	position: absolute!important;
+	top: 10px; left: 0;
+	width:auto;
+	height:30px;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color:#fff;
+	padding-left: 20px; padding-right: 20px;
+	line-height: 30px;
+  font-family:'Nanum Gothic';
+	font-size:12px; letter-spacing:-0.5px;
+  font-weight:bold;
+	color: #333;
+}
+
+#newpd>.newpd_wrap>ul>li>a{
+	display:block; width:100%; height:100%;
+}
+
+#newpd>.newpd_wrap>ul>li>a>img{
+	margin:65px 0px 0px 75px;
+}
+
+#newpd>.newpd_wrap>ul>li>.newpd_text{
+	position:absolute; left:230px; top:95px; z-index:65;
+	letter-spacing:-1px; line-height:18px;
+}
+
+
+/*-----신제품 리스트 안 세부내용 text-----*/
+#newpd>.newpd_wrap>ul>li>.newpd_text>.tit{
+	font-size:20px; padding-bottom:15px;
+	font-weight:bold; letter-spacing:0px;
+	color:#222;
+}
+#newpd>.newpd_wrap>ul>li>.newpd_text>.s_tit{
+	font-size:14px; color:#222;
+	font-weight:bold; letter-spacing:-2px;
+}
+#newpd>.newpd_wrap>ul>li>.newpd_text>.p_tit{
+	font-size:14px; color:#333;
+	font-weight:bold; letter-spacing:-1px;
+}
+#newpd>.newpd_wrap>ul>li>.newpd_text>.pr{
+	font-size:16px;
+  font-weight:bold;
+  color:#222;
+  padding-top:7px;
+}
+
+#newpd>.newpd_wrap>ul>li>.clk{
+	width:25px; height:25px; line-height:25px;
+	position:absolute; right:5px; bottom:10px;
+	font-size:20px; color:#555; text-align:center;
+	text-indent:1px; font-weight:100;
+}
+
+/*---------------스페셜-------------------*/
+#newpd>.newpd_wrap>ul>.new_special{
+	background:url(../img/newproducts/section2_bg2.jpg) no-repeat;}
+
+
+#newpd>.newpd_wrap>ul>.new_special>a>img{
+	margin:65px 0px 0px 43px;
+}
+
+#newpd>.newpd_wrap>ul>.new_special>.newsp_text{
+	position:absolute; left:221px; top:43px; z-index:50;
+	letter-spacing:-1px; font-weight:bold; line-height:24px;
+	color:#222;
+}
+#newpd>.newpd_wrap>ul>.new_special>.newsp_text>.tit{
+	font-size:20px; color:#111; letter-spacing:-1px;
+	font-weight:bold;
+}
+
+#newpd>.newpd_wrap>ul>.new_special>.newsp_text>.mission{
+	padding-top:5px;
+	font-size:16px;
+	color:#333;
+  letter-spacing:-2px;
+}
+/*-----------------신제품 new products 끝----------------*/
+
+
+/*----------------베스트 제품 top products 시작-------------*/
+
+#toppd{
+  width:100%; height:522px; padding-top:80px;
+}
+
+#toppd>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px; text-align:center;
+	padding-bottom:5px;
+}
+
+#toppd>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+  font-family:'Nanum Gothic';
+}
+
+
+#toppd>.toppd_wrap{
+	width:1320px; height:441px;
+	overflow:hidden; margin:65px auto;
+}
+
+
+#toppd>.toppd_wrap>ul{
+	text-align:center;
+}
+
+#toppd>.toppd_wrap>ul>li{
+	float:left; margin-right:20px;
+	width:246px; height:327px;
+  position:relative;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e5e5e5+1,d3d3d3+38,d3d3d3+68,e5e5e5+100 */
+  background: #e5e5e5; /* Old browsers */
+  background: -moz-linear-gradient(top,  #e5e5e5 1%, #d3d3d3 38%, #d3d3d3 68%, #e5e5e5 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #e5e5e5 1%,#d3d3d3 38%,#d3d3d3 68%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #e5e5e5 1%,#d3d3d3 38%,#d3d3d3 68%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e5e5e5', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+
+#toppd>.toppd_wrap>ul>.top_last{
+	margin-right:0px;
+}
+
+#toppd>.toppd_wrap>ul>li:hover img{
+transform:scale(1.02);
+transition:all 0.3s;
+}
+
+#toppd>.toppd_wrap>ul>li>a>h4{
+	text-align:center;
+  font-size:16px;
+	letter-spacing:-0.7px;
+  font-weight:bold;
+  color:#111;
+	margin-top:32px;
+  line-height:22px;
+}
+
+#toppd>.toppd_wrap>ul>li>a>p{
+	text-align:center;
+  font-size:17px;
+	letter-spacing:-1px;
+  font-weight:bold;
+	margin-top:35px;
+  color:#444;
+}
+
+
+#toppd>.toppd_wrap>ul>li>a{
+	display:block; width:100%; height:100%;}
+
+#toppd>.toppd_wrap>ul>li>a>img{
+	margin:0px auto;
+  transition:all 0.3s;
+}
+
+#toppd>.toppd_wrap>ul>li>a>span{
+	position:absolute; left:0px; top:0px;}
+
+
+/*---------------------------베스트 제품 top pd 끝--------------------------*/
+
+
+
+/*---------------------------notice 공지 시작-----------------------------*/
+
+#notice{
+  width:100%; height:584px;
+	overflow:hidden; margin-top:80px;
+}
+#notice>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px; text-align:center;
+	padding-bottom:5px;
+}
+
+#notice>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+  font-family:'Nanum Gothic';
+}
+
+#notice>.box_notice{
+	width:100%; height:420px; margin-top:65px;
+	background:url(../img/bg/notice_bg.jpg) no-repeat;
+}
+
+#notice>.box_notice>.notice_list{
+	width:1320px; margin:0px auto; cursor:default;
+}
+
+#notice>.box_notice>.notice_list>ul{
+	padding-top:62px; padding-left:137px;
+
+}
+
+#notice>.box_notice>.notice_list>ul>li{
+	float:left; margin-right:35px;
+	margin-bottom:20px;
+	background:url(../img/bg/notice_list_bg.png) repeat-x;
+	width:507px; height:134px;
+	position:relative;
+}
+
+
+#notice>.box_notice>.notice_list>ul>li>span{
+	display:block; float:left; letter-spacing:-0.5px;
+	width:39px; height:39px; background:#fc0;
+	text-align:center; margin-top:35px; margin-left:14px;
+	font-weight:bold; padding:5px;
+	}
+
+
+#notice>.box_notice>.notice_list>ul>li>strong{
+	float:left; font-size:15px;
+	text-align:center; margin-top:40px; margin-left:14px;
+	font-weight:bold; letter-spacing:-1px;
+}
+
+#notice>.box_notice>.notice_list>ul>li>p{
+	clear:left; font-size:13px;
+	width:auto; letter-spacing:-0.5px;
+	position:absolute; left:77px; top:63px;
+	font-weight:400;
+}
+
+#notice>.box_notice>.notice_list>ul>li>a{
+	text-indent:-9999px;
+	position:absolute; left:447px; top:49px; z-index:80;
+	width:33px; height:33px; overflow:hidden;
+	background:url(../img/icon/notice_button.png);
+}
+
+#notice>.box_notice>.notice_list>ul>li>a:hover{background-position:33px 0px;}
+
+#notice>.box_notice>a{
+	text-indent:-9999px;
+	display:block;
+	width:39px; height:39px;
+	background:url(../img/icon/the_button.png);
+	margin-top:300px;
+	margin-left:49%;}
+#notice>.box_notice>a:hover{
+	background-position:39px 0px;
+}
+/*------------------------------notice 공지 끝 --------------------------*/
+
+/*----------------------------event 이벤트 시작---------------------------*/
+#event{
+  width:100%; height:715px; margin-top:80px;
+}
+
+#event>h2{
+		font-size:30px; font-weight:bold;
+		letter-spacing:-1px; text-align:center;
+		padding-bottom:5px;
+}
+
+#event>h3{
+	font-size:16px;
+  letter-spacing:-1px;
+  font-weight:bold;
+	text-align:center;
+  padding-bottom:35px;
+  font-family:'Nanum Gothic';
+}
+
+#event>.box_event{
+	width:1320px; height:525px; margin:0px auto;
+	overflow:hidden;
+}
+
+#event>.box_event>ul{
+	width:1320px; height:250px;
+}
+
+#event>.box_event>ul>li{
+	float:left;
+	width:430px; height:250px;
+	margin-right:10px; margin-bottom:25px;
+	position:relative;
+	overflow:hidden;
+}
+
+#event>.box_event>ul>li>img{
+	width:430px; height:250px;
+}
+
+#event>.box_event>ul>li>.text{
+	width:430px; height:155px;
+	position:absolute; left:0px; top:145px;
+	background:url(../img/bg/list_bg.png) repeat; color:#fff;
+	transition-duration:0.3s;
+	overflow:hidden; cursor:default;
+}
+
+#event>.box_event>ul>li:hover>.text{
+	width:430px; height:155px;
+	position:absolute; left:0px; top:95px;
+	background-color:#333; color:#fff;
+	transition-duration:0.3s;
+}
+
+#event>.box_event>ul>li>.text>span{
+}
+
+#event>.box_event>ul>li>.text>.e1{
+	padding-top:5px;}
+
+#event>.box_event>ul>li>.text>p{
+	font-size:14px; letter-spacing:-1px;
+	margin:10px auto; padding-left:20px;
+	}
+
+#event>.box_event>ul>li>.text>a{
+	display:block; width:84px; height:21px;
+	margin:20px auto; text-align:center;
+	background:#fff; line-height:21px; font-weight:700;
+	font-size:13px; letter-spacing:-1px;
+	border-radius:10px;}
+
+#event>.box_event>ul>li>.text>a:hover{
+background:#fc0;
+transition:all 0.5s;
+}
+
+
+/*-----------------------------event 이벤트 끝--------------------------*/
+
+
+/*----------------------------school 포토스쿨 시작----------------------*/
+#school{
+  width:100%; height:590px; margin-top:50px;
+}
+
+#school>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px; text-align:center;
+	padding-bottom:5px;
+}
+
+#school>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+  font-family:'Nanum Gothic';
+}
+
+#school>.box_school{
+	background:url(../img/bg/photoschool_bg1.jpg) no-repeat;
+	margin-top:60px;
+}
+
+#school>.box_school>.list_school{
+	width:1320px; height:420px;
+	margin:0px auto; color:#fff;
+	cursor:default;
+
+}
+
+#school>.box_school>.list_school>ul{
+	padding-top:37px; padding-left:219px;
+}
+
+#school>.box_school>.list_school>ul>li{
+	background:url(../img/bg/list_bg.png) repeat-x;
+	width:883px; height:91px; margin-bottom:15px; overflow:hidden;
+	position:relative;
+}
+
+#school>.box_school>.list_school>ul>li>span{
+	display:block; float:left; color:#000;
+	letter-spacing:-0.5px;
+	width:39px; height:39px; background:#fc0;
+	text-align:center; margin-top:20px; margin-left:104px;
+	font-weight:bold; padding:5px;
+}
+
+#school>.box_school>.list_school>ul>li>p{
+	float:left; line-height:22px;
+	margin-top:22px; margin-left:14px;
+	font-size:14px; letter-spacing:-1px;
+}
+
+
+#school>.box_school>.list_school>ul>li>a{
+	display:block; text-indent:-9999px;
+	position:absolute; right:46px; top:12px;
+	width:60px; height:60px; overflow:hidden;
+	background:url(../img/icon/school_go_buttuon.png);
+}
+
+#school>.box_school>.list_school>ul>li>a:hover{
+	background-position:60px 0px;
+}
+
+#school>.box_school>.list_school>ul>li>a>img{}
+
+#school>.box_school>.list_school>a{
+	display:block;
+	width:39px; height:39px;
+	overflow:hidden;
+	background:url(../img/icon/the_button.png);
+	margin-left:49%;
+	text-indent:-9999px;}
+
+#school>.box_school>.list_school>a:hover{
+		background-position:39px 0px;
+	}
+
+/*------------------------------school 끝 포토스쿨 끝-----------------*/
+
+
+
+/*-----------------------------special 스페셜 콘텐츠 시작---------------*/
+#special{
+  width:100%; height:712px;
+  overflow:hidden;
+}
+
+#special>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px;
+  text-align:center;
+	padding-bottom:5px;
+}
+
+#special>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; padding-bottom:60px;
+  font-family:'Nanum Gothic';
+}
+
+/*-------------------박스---------------*/
+#special>.box_special{width:100%; height:553px;}
+
+#special>.box_special>ul{}
+
+#special>.box_special>ul>li{
+		float:left;
+		position:relative;
+		transform:translate(0,-50px); opacity:0;
+		animation-name:move1;
+		animation-duration:0.8s;
+		animation-timing-function:linear;
+		animation-iteration-count:1;
+		animation-fill-mode:both;
+}
+
+#special>.box_special>ul>li>span{
+	width:77px; height:3px; background:#e0c046;
+		position:absolute; left:14px; top:206px;
+	}
+
+#special>.box_special>ul>li>p{
+		position:absolute; left:14px; top:218px;
+		color:#fff;
+}
+#special>.box_special>ul>li>a{display:block; width:100%; height:100%;}
+
+
+/*----------------------개별 선언-------------*/
+#special>.box_special>ul>.text{
+	width:21%; height:249px; background: #181818;}
+
+#special>.box_special>ul>.text>p{
+	color:#fff;
+	position:absolute; left:20px; top:200px;
+	letter-spacing:-1px;
+  font-family:'Nanum Gothic';
+}
+/*-------------------------------------*/
+#special>.box_special>ul>.movie1{width:39.5%; height:249px; }
+#special>.box_special>ul>.movie1>a{
+	display:block; width:100%; height:100%;
+}
+#special>.box_special>ul>.movie1>a>img{
+	width:100%; height:249px;}
+
+/*-------------------------------------*/
+#special>.box_special>ul>.movie2{width:39.5%; height:249px;}
+#special>.box_special>ul>.movie2>a{}
+#special>.box_special>ul>.movie2>a>img{width:100%; height:249px;}
+
+/*-------------------------------------*/
+#special>.box_special>ul>.mic1{width:33.3%; height:304px;}
+#special>.box_special>ul>.mic1>a{}
+#special>.box_special>ul>.mic1>a>img{width:100%; height:304px;}
+#special>.box_special>ul>.mic1>span{
+	position:absolute; left:14px; top:264px;}
+
+#special>.box_special>ul>.mic1>p{
+	position:absolute; left:14px; top:275px;
+}
+/*-------------------------------------*/
+#special>.box_special>ul>.mic2{width:33.3%; height:304px;}
+#special>.box_special>ul>.mic2>a{}
+#special>.box_special>ul>.mic2>a>img{width:100%; height:304px;}
+#special>.box_special>ul>.mic2>span{
+	position:absolute; left:14px; top:264px;
+}
+#special>.box_special>ul>.mic2>p{
+	position:absolute; left:14px; top:275px;
+}
+/*-------------------------------------*/
+#special>.box_special>ul>.mic3{width:33.3%; height:304px;}
+#special>.box_special>ul>.mic3>a{}
+#special>.box_special>ul>.mic3>a>img{width:100%; height:100%;}
+#special>.box_special>ul>.mic3>span{
+	position:absolute; left:14px; top:264px;
+}
+#special>.box_special>ul>.mic3>p{
+	position:absolute; left:14px; top:275px;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------respon---------------------*/
+
+@media screen and (max-width:1600px){
+
+  #newpd{
+  	margin-top:80px;
+  }
+
+  /*-----------------------------special 스페셜 콘텐츠 시작---------------*/
+  #special{width:100%; height:712px;}
+  #special>h2{
+  	font-size:30px; font-family:Arial;
+  	letter-spacing:-2px; text-align:center;
+  	padding-bottom:5px;
+  }
+  #special>h3{
+  	font-size:16px; letter-spacing:-1px;
+  	text-align:center; padding-bottom:60px;
+  }
+
+  /*-------------------박스---------------*/
+  #special>.box_special{width:100%; height:600px; overflow:hidden;}
+
+  #special>.box_special>ul{}
+
+  #special>.box_special>ul>li{
+  		float:left;
+  		position:relative;
+  		transform:translate(0,-50px); opacity:0;
+  		animation-name:move1;
+  		animation-duration:0.8s;
+  		animation-timing-function:linear;
+  		animation-iteration-count:1;
+  		animation-fill-mode:both;
+  }
+
+  #special>.box_special>ul>li>span{
+  	width:77px; height:3px; background:#e0c046;
+  		position:absolute; left:14px; top:180px;
+  	}
+
+  #special>.box_special>ul>li>p{
+  		position:absolute; left:14px; top:190px;
+  		color:#fff;
+  }
+  #special>.box_special>ul>li>a{display:block; width:100%; height:100%;}
+
+
+  /*----------------------개별 선언-------------*/
+  #special>.box_special>ul>.text{
+  	width:21%; height:230px; background: #181818;}
+
+  #special>.box_special>ul>.text>p{
+  	color:#fff;
+  	position:absolute; left:20px; top:160px;
+  	letter-spacing:0.5px;
+  }
+  /*-------------------------------------*/
+  #special>.box_special>ul>.movie1{width:39.5%; height:230px; }
+  #special>.box_special>ul>.movie1>a{
+  	display:block; width:100%; height:100%;
+  }
+  #special>.box_special>ul>.movie1>a>img{
+  	width:100%; height:230px;}
+
+  /*-------------------------------------*/
+  #special>.box_special>ul>.movie2{width:39.5%; height:230px;}
+  #special>.box_special>ul>.movie2>a{}
+  #special>.box_special>ul>.movie2>a>img{width:100%; height:230px;}
+
+  /*-------------------------------------*/
+  #special>.box_special>ul>.mic1{width:33.3%; height:225px;}
+  #special>.box_special>ul>.mic1>a{}
+  #special>.box_special>ul>.mic1>a>img{width:100%; height:225px;}
+  #special>.box_special>ul>.mic1>span{
+  	position:absolute; left:14px; top:180px;}
+
+  #special>.box_special>ul>.mic1>p{
+  	position:absolute; left:14px; top:190px;
+  }
+  /*-------------------------------------*/
+  #special>.box_special>ul>.mic2{width:33.3%; height:225px;}
+  #special>.box_special>ul>.mic2>a{}
+  #special>.box_special>ul>.mic2>a>img{width:100%; height:225px;}
+  #special>.box_special>ul>.mic2>span{
+  	position:absolute; left:14px; top:180px;
+  }
+  #special>.box_special>ul>.mic2>p{
+  	position:absolute; left:14px; top:190px;
+  }
+  /*-------------------------------------*/
+  #special>.box_special>ul>.mic3{width:33.3%; height:225px;}
+  #special>.box_special>ul>.mic3>a{}
+  #special>.box_special>ul>.mic3>a>img{width:100%; height:225px;}
+  #special>.box_special>ul>.mic3>span{
+  	position:absolute; left:14px; top:180px;
+  }
+  #special>.box_special>ul>.mic3>p{
+  	position:absolute; left:14px; top:190px;
+  }
+
+
+}

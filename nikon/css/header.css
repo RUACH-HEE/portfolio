@@ -1,0 +1,234 @@
+@charset "utf-8";
+@import "base.css";
+
+*{
+	font-family:'Nanum Squarec',"Malgun Gothic","맑은 고딕", sans-serif;
+}
+
+img{border:0px none;}
+
+header{
+	width:100%; height:120px;
+	position:absolute; left:0px; top:0px; z-index:100;
+	background-color:#0c0c0c;
+	}
+
+/*---------------header top 시작--------------*/
+header .h_top{
+ width:100%; height:39px;
+ background:#222;
+ border-bottom:1px solid #0c0c0c;
+ position:absolute; left:0px; top:0px;
+}
+
+header>.h_top>.top_inner{
+	width:1320px; height:39px;
+	margin:0px auto;
+	overflow:hidden;
+}
+
+header>.h_top>.top_inner>.tnb{
+	float:right;
+
+}
+header>.h_top>.top_inner>.tnb>li{
+	width:64px; height:40px;
+	float:left; margin-right:14px;
+	line-height:40px;
+	text-align:center;
+	letter-spacing:0px;
+}
+
+header>.h_top>.top_inner>.tnb>.global{
+	width:78px; letter-spacing:0.3px;
+}
+
+header>.h_top>.top_inner>.tnb>.global span{
+display:block; text-indent:-9999px; float:right;
+width:10px; height:10px; margin-top:10px;
+background:url(../img/nfimg/glo.png) no-repeat;
+}
+
+header>.h_top>.top_inner>.tnb>.tnb_box{
+	width:64px; height:27px;
+	background: #454545;
+	margin-top:6px;
+	line-height:27px;
+	margin-right:0px;
+}
+
+header>.h_top>.top_inner>.tnb>li>a{
+	color:#eaeaea;
+	letter-spacing:-0.8px;
+	font-size:13px;
+}
+
+/*------------------------------------------bot 시작------------*/
+
+header>.h_bot{
+	width:100%; height:80px; margin:0px auto;
+	background: #222222;
+	position:absolute; left:0px; top:40px;
+	border:0px none;
+	margin:0px; padding:0px;
+}
+
+header>.h_bot.scrl{
+	position:fixed; left:0px; top:0px;
+}
+
+header>.h_bot>.bot_inner{
+	width:1320px; height:80px;
+	margin:0px auto;
+	position:relative; z-index:100;
+}
+
+header>.h_bot>.bot_inner>h1{
+	text-indent:-9999px;
+	float:left;
+}
+
+header>.h_bot>.bot_inner>h1>a{
+	display:block;
+	width:242px; height:72px;
+	background:url(../img/nfimg/logo_new.png) no-repeat;
+	margin-top:3px;
+}
+
+header>.h_bot>.bot_inner>nav{
+	width:1078px; height:80px;
+	margin:0px auto; float:left;
+}
+
+header>.h_bot>.bot_inner>nav>.gnb{
+	width:750px; height:80px;
+	margin:0px auto; float:left;
+	margin-left:35px;
+}
+
+header>.h_bot>.bot_inner>nav>.gnb>li{
+	float:left; width:150px; height:80px;
+	line-height:80px;
+	text-align:center;
+}
+
+header>.h_bot>.bot_inner>nav>.gnb>li>a{
+	display:block; width:150px; height:80px;
+	color:#fff;
+	font-size:16.5px;
+	letter-spacing:-0.7px;
+	font-family:'Nanum Gothic';
+
+}
+
+header>.h_bot>.bot_inner>nav>.gnb>li:hover>a{
+	color:#fc0;
+}
+
+
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub{
+	width:1200px; height:140px;
+	overflow:hidden; text-align:center;
+	position:absolute; right:0px; top:80px; z-index:120;
+	display:none;
+}
+
+header>.h_bot>.gnbbg{
+	width:100%; height:140px;
+	position:absolute; left:0px; top:80px; z-index:90;
+	background:rgba(62,62,62,1);
+	display:none;
+}
+
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li{
+	float:left; text-align:center;
+	width:150px; height:120px;
+}
+
+
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>a{
+	display:block;
+	width:150px; height:120px;
+	line-height:220px;
+	font-size:14px;
+	letter-spacing:-1px;
+	color:#fff;
+	padding-bottom:5px;
+}
+
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>a:hover{
+	border-bottom:2px solid #fc0;
+}
+
+
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>.lnb1{
+	background:url(../img/nfimg/slr.png) top center no-repeat;
+}
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>.lnb2{
+	background:url(../img/nfimg/mi.png) top center no-repeat;
+}
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>.lnb3{
+	background:url(../img/nfimg/com.png) top center no-repeat;
+}
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>.lnb4{
+background:url(../img/nfimg/ac.png) top center no-repeat;
+}
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>.lnb5{
+background:url(../img/nfimg/lens.png) top center no-repeat;
+}
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>.lnb6{
+background:url(../img/nfimg/sp.png) top center no-repeat;
+}
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>.lnb7{
+background:url(../img/nfimg/etc.png) top center no-repeat;
+}
+header>.h_bot>.bot_inner>nav>.gnb>li>.sub>li>.lnb8{
+	background:url(../img/nfimg/acc.png) top center no-repeat;
+}
+
+/*------------------------------------------nabox-------------------------*/
+header>.h_bot>.bot_inner>nav>.nabox{
+	width:280px; height:80px; float:right;
+}
+
+header>.h_bot>.bot_inner>nav>.nabox>li{
+	float:left;
+}
+header>.h_bot>.bot_inner>nav>.nabox>.search{
+	width:175px; height:80px;
+}
+header>.h_bot>.bot_inner>nav>.nabox>.search>a{
+	display:block; width:24px; height:24px;
+	margin-top:26px; margin-left:141px;
+	text-indent:-9999px;
+	background:url(../img/nfimg/search.png) no-repeat;
+}
+
+header>.h_bot>.bot_inner>nav>.nabox>.iam{
+	width:105px; height:80px;
+}
+header>.h_bot>.bot_inner>nav>.nabox>.iam>a{
+	display:block; width:52px; height:56px;
+	margin-top:14px; margin-left:33px;
+	text-indent:-9999px;
+	background:url(../img/nfimg/camera.png) no-repeat;
+	position:relative;
+}
+header>.h_bot>.bot_inner>nav>.nabox>.iam>a>span{
+	display:block; width:30px; height:19px;
+	background:url(../img/nfimg/pong.png) no-repeat;
+	position:absolute; right:0px; top:5px;
+
+		transform:scale(0,1);
+		animation-name:nik;
+		animation-duration:1.8s;
+		animation-timing-function:ease-in-out;
+		animation-iteration-count:1;
+		animation-iteration-count: infinite;
+
+}
+
+@keyframes nik{
+	from{transform:scale(0);}
+	to{transform:scale(1);}
+}

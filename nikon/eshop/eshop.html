@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<title>E shop ㅣNikon Imaging Korea</title>
+	<link rel="stylesheet" href="../css/eshop.css">
+	<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+	<!--<script src="../../js/prefixfree.min.js"></script> -->
+	<script src="../js/jquery-ui.js"></script>
+	 <!-- jQuery library (served from Google) -->
+	<!-- bxSlider Javascript file -->
+	<script src="../js/bxslider/jquery.bxslider.min.js"></script>
+	<!-- bxSlider CSS file -->
+	<link href="../css/jquery.bxslider.css" rel="stylesheet"/>
+
+	<script src="../js/simply/jquery.simplyscroll.js"></script>
+	<link rel="stylesheet" href="../js/simply/jquery.simplyscroll.css">
+
+	<script type="text/javascript">
+	$(function(){
+		$('header>.h_bot>.bot_inner>nav>.gnb>.pd').on('mouseenter',function(){
+		 $('.gnbbg').stop().slideDown(350);
+		 $('.sub').stop().slideDown(350);
+	 });
+	 	 $('header>.h_bot>.bot_inner>nav>.gnb>.pd').on('mouseleave',function(){
+		 $('.gnbbg').stop().slideUp(350);
+		 $('.sub').stop().slideUp(350);
+	 });
+	 	 $(window).scroll(function(){
+	 	 	if( $(document).scrollTop()>=40 ){
+	 	 		$('.h_bot').addClass('scrl');
+	 	 	}else{
+	 	 		$('.h_bot').removeClass('scrl');
+	 	 	}
+	 	 })
+
+	 $('.bxslider').bxSlider({
+		  auto:true,
+		  autoStart:true,
+		  speed:800,
+		  pause:8000,
+		  touchEnabled: true,
+		  controls:true,
+		  pager:true
+		  });
+
+	 $("#scroller").simplyScroll({
+			auto:false,
+			manualMode: 'loop',
+			speed:2
+		});
+		function respnProp(obj,originSize,prop,defaultW){
+			var defaultValue=originSize;
+			var currentValue=( $(window).width()*defaultValue )/defaultW;
+			$(obj).css(prop,currentValue);
+			$(window).resize(function(){
+				var currentValue=( $(window).width()*defaultValue )/defaultW;
+				$(obj).css(prop,currentValue);
+			});
+		 }
+		 respnProp('.es_slide',400,'height',1920)
+		 respnProp('.es_slide',1920,'width',1920)
+		 respnProp('.bx_list2',400,'height',1920)
+		 respnProp('.bx_list2',1920,'width',1920)
+
+	});
+  </script>
+<body>
+	<!-- header 시작 -->
+	<header>
+	<div class="h_top">
+		<div class="top_inner">
+			<ul class="tnb">
+				<li><a href="../login/login.html">로그인</a></li>
+				<li><a href="../login/login.html">회원가입</a></li>
+				<li><a href="../login/login.html">마이페이지</a></li>
+				<li><a href="../login/login.html">매장찾기</a></li>
+				<li class="global"><a href="../index.html">Global Site
+				<span>니콘 글로벌 홈페이지로 이동</span></a></li>
+				<li class="tnb_box"><a href="../login/login.html">정품등록</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="h_bot">
+		<div class="bot_inner">
+		<h1><a href="../index.html">니콘</a></h1>
+		<nav>
+			<ul class="gnb">
+			<li class="pd"><a href="../productinfo/if.html">제품정보</a>
+				<ul class="sub">
+				<li><a href="../productinfo/if.html" class="lnb1">
+					SLR 카메라</a></li>
+
+				<li><a href="../productinfo/if.html" class="lnb2">
+					미러리스 카메라</a></li>
+
+				<li><a href="../productinfo/if.html" class="lnb3">
+					콤팩트 카메라</a></li>
+
+				<li><a href="../productinfo/if.html" class="lnb4">
+					액션 카메라</a></li>
+
+				<li><a href="../productinfo/if.html" class="lnb5">
+					렌즈</a></li>
+
+				<li><a href="../productinfo/if.html" class="lnb6">
+					스피드라이트</a></li>
+
+				<li><a href="../productinfo/if.html" class="lnb7">
+					쌍안경/etc</a></li>
+
+				<li><a href="../productinfo/if.html" class="lnb8">
+					액세서리</a></li>
+				</ul>
+			</li>
+				<li><a href="../event/event.html">이벤트</a></li>
+				<li><a href="../support/support.html">고객지원</a></li>
+				<li><a href="eshop.html">E shop</a></li>
+				<li><a href="../login/login.html">포토스쿨</a></li>
+		</ul>
+		<ul class="nabox">
+		<li class="search"><a href="../login/login.html">찾기</a></li>
+		<li class="iam">
+		<a href="../login/login.html">로그인<span>풍선</span></a>
+		</li>
+		</ul>
+	</nav>
+	</div>
+	<div class="gnbbg">
+	</div>
+	</div>
+	</header>
+	<!-- header 끝-->
+
+
+  <!-- 배너 시작 -->
+	<section id="es_banner">
+		<h2>eshop이벤트</h2>
+		<div class="es_slide">
+			<ul class="bxslider">
+				<li class="bx_list2">
+					<a href="#"><img src="img/z1.jpg" alt="i am keymission"></a>
+				</li>
+				<li class="bx_list2">
+					<a href="#"><img src="img/z2.jpg" alt=""></a>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<!-- 배너 끝 -->
+
+
+	<!-- 배너 밑 공지 시작 -->
+	<section id="es_notice">
+		<div class="notice_box">
+			<h2>NOTICE</h2>
+				<div class="es_grap">
+					<ul>
+						<li class="item">
+						<a href="#">[공지]오전 11시 이전 결제 완료 주문건 당일출고</a>
+						<span class="date">2017-01-28</span>
+						</li>
+
+						<li class="item">
+						<a href="#">[공지]카드할부 공지사항</a>
+						<span class="date">2017-02-10</span>
+						</li>
+
+						<li class="item">
+						<a href="#">[이벤트]나에게 지금 필요한 것은 #봄소풍</a>
+						<span class="date">2017-02-28</span>
+						</li>
+
+						<li class="item">
+						<a href="#">[공지]17년도 할부 특별 이벤트 안내</a>
+						<span class="date">2017-03-02</span>
+						</li>
+
+						<li class="item">
+						<a href="#">[이벤트]봄출사의 완성은 Nikon 1 J5</a>
+						<span class="date">2017-03-14</span>
+						</li>
+					</ul>
+				</div>
+
+			<div class="control">
+				<a href="#" data-control="prev" class="ir prev">이전 공지사항 게시글 보기</a>
+				<a href="#" data-control="next" class="ir next">다음 공지사항 게시글 보기</a>
+				<a href="#" class="more">공지사항 더보기</a>
+			</div>
+
+		</div>
+	</section>
+	<!-- 배너 밑 공지 끝 -->
+
+
+<!-- 베스트 상품 시작 -심플스크롤 사용- -->
+<section id="es_best">
+	<h2>BEST SELLER</h2>
+	<h3>니콘의 베스트 상품을 만나보세요</h3>
+	<span>line</span>
+	<div class="best_box">
+		<ul id="scroller">
+			<li>
+				<a href="#">
+					<img src="img/bestseller/p900s.png" alt="COOLPIX P900S">
+					<b class="tit">COOLPIX P900S</b>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/bestseller/d5_cf.png" alt="D5(CF,body 단품)">
+					<b class="tit">D5(CF,body 단품)</b>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/bestseller/d5_xqd.png" alt="D5 (XQD,body 단품)">
+					<b  class="tit">D5 (XQD,body 단품)</b>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/bestseller/d500.png" alt="D500(body 단품)">
+					<b  class="tit">D500(body 단품)</b>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/bestseller/d810.png" alt="D810(body 단품)">
+					<b  class="tit">D810(body 단품)</b>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/bestseller/d750.png" alt="D750(body 단품)">
+					<b class="tit">D750(body 단품)</b>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/bestseller/af60mm.png" alt="AF-S Micro NIKKOR 60mm f/2.8G ED">
+					<b class="tit">AF-S Micro NIKKOR 60mm f/2.8G ED</b>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/bestseller/af24-70.png" alt="AF-S NIKKOR 24-70mm f/2.8E ED VR">
+					<b class="tit">AF-S NIKKOR 24-70mm f/2.8E ED VR</b>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<img src="img/bestseller/acc.png" alt="니콘 액세서리 4종 패키지">
+					<b class="tit">니콘 액세서리 4종 패키지</b>
+				</a>
+			</li>
+		</ul>
+	</div>
+</section>
+<!-- 베스트 상품 끝 -->
+
+
+<!-- top 배너 시작 -->
+<section id="sale_banner">
+	<div class="sale_box">
+		<div class="box1">
+			<a href="#">
+				<img src="img/sale/br1.jpg" alt="이벤트배너">
+			</a>
+		</div>
+		<div class="box2">
+			<a href="#">
+				<img src="img/sale/br2.jpg" alt="이벤트배너">
+			</a>
+		</div>
+	</div>
+</section>
+<!-- top 배너 끝 -->
+
+
+<!-- 그 외 제품 리스트 시작-->
+<section id="ourpd">
+	<h2>Our Products</h2>
+	<h3>니콘의 다양한 상품을 만나보세요</h3>
+	<span>line</span>
+
+<div class="our_box">
+<ul>
+	<li>
+		<a href="#">
+			<img src="img/our/70-300.png" alt="1 NIKKOR VR 70-300mm f/4.5-5.6">
+		</a>
+
+		<div class="our_text">
+		<b>1 NIKKOR VR 70-300mm f/4.5-5.6</b>
+		<p>세계 최소,최경량 초망원 줌 렌즈</p>
+		<p class="price">1,098,000원</p>
+		</div>
+	</li>
+	<li>
+		<a href="#">
+			<img src="img/our/11-275.png" alt="1 NIKKOR AW 11-27.5mm f/3.5-5.6">
+		</a>
+
+		<div class="our_text">
+		<b>1 NIKKOR AW 11-27.5mm f/3.5-5.6</b>
+		<p>세계 최초 방수, 내충격 표준 줌렌즈</p>
+		<p class="price">318,400원</p>
+		</div>
+	</li>
+	<li>
+		<a href="#">
+			<img src="img/our/carr.png" alt="니콘여행용캐리어">
+		</a>
+
+		<div class="our_text">
+		<b>니콘여행용캐리어</b>
+		<p>폴리카보네이트 소재 기내용 캐리어</p>
+		<p class="price">98,000원</p>
+		</div>
+	</li>
+	<li class="box_4">
+		<a href="#">
+			<img src="img/our/11-275_1.png" alt="1 NIKKOR 11-27.5mm f/3.5-5.6">
+		</a>
+
+		<div class="our_text">
+		<b>1 NIKKOR 11-27.5mm f/3.5-5.6</b>
+		<p>더욱 컴팩트해진 표준 Zoom 렌즈</p>
+		<p class="price">248,000원</p>
+		</div>
+	</li>
+	<li>
+		<a href="#">
+			<img src="img/our/5600.png" alt="D5600 AF-P 18-55 VR KIT">
+		</a>
+
+		<div class="our_text">
+		<b>D5600 AF-P 18-55 VR KIT</b>
+		<p>새로운 추억을 만든다.</p>
+		<p class="price">1,048,000원</p>
+		</div>
+	</li>
+	<li>
+		<a href="#">
+			<img src="img/our/j.png" alt="메모리카드+케이스증정Nikon 1 J5 표준 파워 줌 렌즈 KIT">
+		</a>
+
+		<div class="our_text">
+		<b>Nikon 1 J5 표준 파워 줌 렌즈 KIT</b>
+		<p>당신은 아름답다</p>
+		<p class="price">548,000원</p>
+		</div>
+	</li>
+	<li>
+		<a href="#">
+			<img src="img/our/3400.png" alt="D3400 BK KR AF-P 18-55VR KIT">
+		</a>
+
+		<div class="our_text">
+		<b>D3400 BK KR AF-P 18-55VR KIT</b>
+		<p>작고 가벼운카메라, 세상을 연결하다.</p>
+		<p class="price">698,000원</p>
+		</div>
+	</li>
+	<li class="box_8">
+		<a href="#">
+			<img src="img/our/coolshot.png" alt="COOLSHOT 80i VR">
+		</a>
+
+		<div class="our_text">
+		<b>COOLSHOT 80i VR</b>
+		<p>흔들림 없이! 망설임 없이!</p>
+		<p class="price">598,000원</p>
+		</div>
+	</li>
+	<li>
+		<a href="#">
+			<img src="img/our/p100.png" alt="COOLPIX W100">
+		</a>
+
+		<div class="our_text">
+		<b>COOLPIX W100</b>
+		<p>우리아이도! 패밀리카메라</p>
+		<p class="price">218,000원</p>
+		</div>
+	</li>
+	<li>
+		<a href="#">
+			<img src="img/our/actioncam.png" alt="KeyMission 360">
+		</a>
+
+		<div class="our_text">
+		<b>KeyMission 360</b>
+		<p>I AM ON A MISSION</p>
+		<p class="price">648,000원</p>
+		</div>
+	</li>
+		<li>
+		<a href="#">
+			<img src="img/our/vr105.png" alt="AF-S VR Micro-Nikkor 105mm f/2.8G IF-ED">
+		</a>
+
+		<div class="our_text">
+		<b>AF-S VR Micro-Nikkor 105mm f/2.8G</b>
+		<p>차세대 손떨림보정</p>
+		<p class="price">1,072,000원</p>
+		</div>
+	</li>
+		<li class="box_12">
+		<a href="#">
+			<img src="img/our/200-500.png" alt="AF-S NIKKOR 200-500mm f/5.6E ED VR">
+		</a>
+
+		<div class="our_text">
+		<b>AF-S NIKKOR 200-500mm f/5.6E ED VR</b>
+		<p>높은광학성능, 간편하게</p>
+		<p class="price">1,648,000원</p>
+		</div>
+	</li>
+</ul>
+<a href="#">더 많은 제품 보러가기</a>
+</div>
+</section>
+<!-- 그 외 제품 리스트 끝-->
+
+<!-- bot 배너 시작 -->
+<section id="sale_banner2">
+	<div class="sale_box2">
+		<div class="box3">
+			<a href="#">
+				<img src="img/sale/br1.jpg" alt="이벤트배너">
+			</a>
+		</div>
+		<div class="box4">
+			<a href="#">
+				<img src="img/sale/br2.jpg" alt="이벤트배너">
+			</a>
+		</div>
+	</div>
+</section>
+<!-- bot 배너 끝 -->
+
+
+
+<!-- e- shop 고객지원 서비스 시작-->
+<section id="es_support">
+		<div class="sup_top">
+		<h2>고객지원센터</h2>
+		<span>전화</span>
+		<p>대표전화 080-800-6600</p>
+		<span>시간</span>
+		<p>운영시간 평일 09:00-18:00 (토,일,공휴일 휴무)</p>
+		</div>
+	<div class="sup_box">
+		<div class="qna">
+			<a href="#">
+			<img src="img/icon_quick1.png" alt="상품관련 질문">
+			<span>상품관련 Q&A</span>
+			</a>
+		</div>
+
+		<div class="qna">
+			<a href="#">
+			<img src="img/icon_quick2.png" alt="쿠폰포인트 정책">
+			<span>쿠폰/포인트 정책</span>
+			</a>
+		</div>
+
+		<div class="cp">
+			<a href="#">
+			<img src="img/icon_quick3.png" alt="배송안내">
+			<span>배송안내</span>
+			</a>
+		</div>
+
+		<div class="qna">
+			<a href="#">
+			<img src="img/icon_quick4.png" alt="주문취소/반품안내">
+			<span>주문취소/반품안내</span>
+			</a>
+		</div>
+
+	</div>
+</section>
+<!-- e- shop 고객지원 서비스 끝-->
+
+<footer>
+		<div class="foot_wrap">
+			<div class="foot_logo">
+			<a href="index.html" class="footlogo"></a>
+			</div>
+			<div class="foot_info">
+					<div class="foot_support">
+					<ul>
+						<li><a href="#">사이트맵</a></li>
+						<li><a href="#">개인정보취급방침</a></li>
+						<li><a href="#">사이트 이용약관</a></li>
+						<li><a href="#">이메일 무단수집거부</a></li>
+					</ul>
+					</div>
+
+					<div class="foot_link">
+					<a href="#">니콘코리아 소개</a>
+					<a href="#">니콘그룹 바로가기</a>
+					</div>
+
+					<address>
+					<p>상호명 : 주식회사 니콘이미징코리아 / 대표이사 : 키타바타 히데유키 / TEL : 080-800-6600 / FAX : 02-2026-0029</p>
+					<p>주소 : 서울특별시 중구 세종대로 39 대한상공회의소 12층 (중구 남대문로 4-45) (우편번호 04513)</p>
+					<p>사업자등록번호 : 104-81-98839 / 통신판매업신고 : 중구 제05801호 / 콜센터 운영시간 : 평일 09:00 ~ 18:00</p>
+					<p>&copy; 2017 Nikon Imaging Korea CO., LTD</p>
+					<p class="mini">이사이트는 손민희 포트폴리오사이트로 상업적인 목적이 아님을 밝힙니다.</p>
+					</address>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

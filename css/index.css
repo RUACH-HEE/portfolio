@@ -7,18 +7,17 @@
 body {
   font-family:'Poppins','Noto Sans KR','맑은 고딕', sans-serif;
   font-size:14px;
+  background-color: #f0ece9;
 }
 
 #main{
 	width:100%;
-	height:1000px;
+	height:800px;
 	overflow:hidden;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#96a4d9+0,a3abd4+33,a9aed4+69,b0a9c7+100 */
-background: rgb(150,164,217); /* Old browsers */
-background: -moz-linear-gradient(top, rgb(150,164,217) 0%, rgb(163,171,212) 33%, rgb(169,174,212) 69%, rgb(176,169,199) 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, rgb(150,164,217) 0%,rgb(163,171,212) 33%,rgb(169,174,212) 69%,rgb(176,169,199) 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, rgb(150,164,217) 0%,rgb(163,171,212) 33%,rgb(169,174,212) 69%,rgb(176,169,199) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', endColorstr='#b0a9c7',GradientType=0 ); /* IE6-9 */
+
+
+
+
 
   position:relative;
 }
@@ -66,12 +65,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', end
   /* title */
 .text-wrapper .title {
     position: absolute;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 30px;
+    font-size: 36px;
     letter-spacing:-0.3px;
-    color: #EEE; }
+    color: #fff; }
 
   .text-wrapper .subtitle {
     width: 80%;
@@ -82,10 +81,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', end
     font-size: 27px;
     font-weight: bold;
     letter-spacing: 0.02em;
-    color: #e0dddf; }
+    color: #f2f2f2; }
 
 .text-wrapper .subtitle-top {
-      top: 7.5%; }
+      top: 10%; }
 
 .text-wrapper .subtitle-bottom {
       bottom: 15%; }
@@ -239,11 +238,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', end
 
 /*----------------------------dnf-container END ------------------*/
 
-#main>.main_list>.scroll_btn{
-  display:block;
-  text-align:center;
-  margin-top:870px;
-}
+
 /*-------------------------------전체선언 시작------------------*/
 #projects{
 	width:100%;
@@ -265,16 +260,19 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', end
 #projects h2{
 	font-size:52px;
 	letter-spacing:-1px;
-	color:#111;
+	color:#414143;
 	text-decoration:underline;
 	line-height:66px;
+  cursor: default;
 }
+
 
 #projects h3{
 	font-size:16px;
 	font-weight:bold;
-	letter-spacing:-1px;
-  color:#222;
+	letter-spacing:-0.8px;
+  color:#a67f78;
+  cursor: default;
 }
 
 #projects .s_tit{
@@ -286,14 +284,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', end
 	font-family:'Noto Sans KR','맑은 고딕', sans-serif;
 	font-size:16px;
 	letter-spacing:-1.7px;
-  color:#333;
-  line-height:35px;
+  color:#8f8681;
+  line-height:38px;
+  cursor: default;
+  margin-top: 5px;
 }
 
 #projects img:hover{
 	overflow:hidden;
-	transform:scale(1.01);
-	transition:all 0.8s;
+	transform:scale(1.05);
+	transition:all 1.3s;
 }
 
 /*-------------------------------전체선언 끝------------------*/
@@ -316,12 +316,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', end
 }
 
 #projects>#profile>.profile_box>.tit>h2{
-	position:absolute; right:100px; top:290px;
+	position:absolute; left:60%; top:290px;
 	transition:all 0.8s;
 }
 
 #projects>#profile>.profile_box>.s_tit{
-	right:70px; top:450px;
+	left:60%; top:450px;
 }
 
 
@@ -346,12 +346,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96a4d9', end
 }
 
 #projects>#nikon>.nikon_box>.tit>h2{
-position:absolute; right:40px; top:270px;
+position:absolute; left:65%; top:270px;
 transition:all 0.8s;
 }
 
 #projects>#nikon>.nikon_box>.s_tit{
-	right:90px; top:440px;
+	left:65%; top:440px;
 	padding-top:10px;
 	line-height:20px;
 }
@@ -375,7 +375,7 @@ transition:all 0.8s;
 	transition:all 0.8s;
 }
 #projects>#taiwan>.taiwan_box>.tit>h2{
-position:absolute; right:40px; top:318px;
+position:absolute; left:50%; top:318px;
 transition:all 0.8s;
 }
 
@@ -392,7 +392,7 @@ transition:all 0.8s;
 	overflow:hidden;
 }
 #projects>#taiwan>.taiwan_box>.s_tit{
-	left:10px; bottom:170px;
+	left:0px; bottom:160px;
 	padding-top:10px;
 	line-height:20px;
 }
@@ -416,12 +416,12 @@ transition:all 0.8s;
 	transition:all 0.8s;
 }
 #projects>#shinhan>.shinhan_box>.tit>h2{
-position:absolute; right:40px; top:295px;
+position:absolute; left:65%; top:295px;
 transition:all 0.8s;
 }
 
 #projects>#shinhan>.shinhan_box>.s_tit{
-	right:40px; top:450px;
+	left:65%; top:450px;
 	padding-top:10px;
 	line-height:20px;
 }
@@ -442,12 +442,12 @@ transition:all 0.8s;
 	transition:all 0.8s;
 }
 #projects>#seoul>.seoul_box>.tit>h2{
-position:absolute; right:0px; top:320px;
+position:absolute; left:60%; top:250px;
 
 }
 
 #projects>#seoul>.seoul_box>.s_tit{
-	right:140px; bottom:300px;
+	left:60%; bottom:300px;
 	padding-top:10px;
 	line-height:20px;
 }
@@ -478,11 +478,11 @@ position:absolute; right:0px; top:320px;
 
 #projects>#photo>.photo_box>.tit>h2{
 	position:absolute;
-	right:40px; top:362px;
+	left:65%; top:362px;
 }
 
 #projects>#photo>.photo_box>.s_tit{
-	right:100px; bottom:360px;
+	left:65%; bottom:360px;
 	padding-top:10px;
 	line-height:20px;
 }
@@ -504,12 +504,12 @@ position:absolute; right:0px; top:320px;
 	transition:all 0.8s;
 }
 #projects>#process>.process_box>.tit>h2{
-	position:absolute; right:40px; top:338px;
+	position:absolute; left:62%; top:338px;
 	transition:all 0.8s;
 }
 
 #projects>#process>.process_box>.s_tit{
-	right:175px; top:438px;
+	left:62%; top:438px;
 	padding-top:10px;
 	line-height:20px;
 }

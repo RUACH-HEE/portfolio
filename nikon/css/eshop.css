@@ -1,0 +1,429 @@
+@charset "utf-8";
+@import url(header.css);
+@import url(footer.css);
+
+/*
+ * Nanum Square Web Fonts
+ * https://github.com/hiun/NanumSquare
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com)
+ */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+@font-face {
+  font-family: 'Nanum Square';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/font/NanumSquareR.eot);
+  src: local('Nanum Square Regular'),
+       local('NanumSquareR'),
+       url(/font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareR.woff2) format('woff2'),
+       url(/font/NanumSquareR.woff) format('woff'),
+       url(/font/NanumSquareR.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Nanum Square bold';
+  font-style: bold;
+  font-weight: 700;
+  src: url(/font/NanumSquareB.eot);
+  src: local('Nanum Square Bold'),
+       local('NanumSquareB'),
+       url(/font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+       url(/font/NanumSquareB.woff2) format('woff2'),
+       url(/font/NanumSquareB.woff) format('woff'),
+       url(/font/NanumSquareB.ttf) format('truetype');
+}
+
+
+/*----------------------------eshop 전체 선언-----------------------------------------*/
+body{background: #f4f4f4;
+	font-weight:normal;
+  font-size:14px;
+	font-family:'Nanum Square','Nanum Gothic','Malgun Gothic','맑은 고딕', sans-serif;
+	letter-spacing:-1px;
+}
+
+/*----------------------------e shop 배너--------------------------------------*/
+
+#es_banner{width:100%; margin-top:120px;}
+#es_banner>h2{display:none;}
+#es_banner>.es_slide{
+  position:relative; z-index:80; top:0px;
+  width:100%; height:400px;
+  overflow:hidden;
+}
+
+#es_banner>.es_slide>.bxslider{}
+
+#es_banner>.es_slide>.bxslider>li{
+    position:absolute; left:0px; top:0px;
+    width:100%; height:400px;}
+
+#es_banner>.es_slide>.bxslider>li>a{
+      display:block; width:100%; height:400px; }
+
+#es_banner>.es_slide>.bxslider>li>a>img{
+  width:100%; height:100%;}
+
+
+/*----------------------------e shop 공지사항---------------------------------------*/
+#es_notice{
+  width:100%; height:66px; overflow:hidden;}
+
+#es_notice>.notice_box{
+  width:1320px; height:66px;
+  margin:0px auto;
+  background:rgba(255,255,255,0.9);
+  position:relative;
+
+}
+
+
+#es_notice>.notice_box>h2{
+  float:left; width:200px; height:66px;
+  line-height:66px; font-size: 16px; text-align:center;}
+
+#es_notice>.notice_box>.es_grap{
+  float:left; width:870px; height:66px; line-height:66px;
+  font-size: 14px; text-align:left;
+  overflow:hidden; position:relative;
+}
+
+#es_notice>.notice_box>.es_grap>ul{position:relative;}
+#es_notice>.notice_box>.es_grap>ul>li{position:relative;}
+#es_notice>.notice_box>.es_grap>ul>li>a{}
+#es_notice>.notice_box>.es_grap>ul>li>span{
+  position:absolute; right:20px; top:0px;
+  font-size: 14px;
+}
+
+
+#es_notice>.notice_box>.control{
+  width:250px; height:66px; float:left;}
+
+#es_notice>.notice_box>.control>.prev{
+  display:block;
+  text-indent:-9999px;
+  width:80px; height:66px;
+  margin:0px auto;
+ background:url(../eshop/img/control.png) no-repeat;
+  float:left;
+  border-right:1px solid #ccc;
+  border-left:1px solid #ccc;
+  }
+  #es_notice>.notice_box>.control>.next{
+    display:block;
+    width:80px; height:66px; margin:0px auto;
+    text-indent:-9999px;
+    background:url(../eshop/img/control.png) no-repeat;
+    background-position:-80px 0px;
+    float:left;
+    border-right:1px solid #ccc;
+  }
+
+#es_notice>.notice_box>.control>.more{
+   display:block;
+    width:80px; height:66px; margin:0px auto;
+    text-indent:-9999px;
+    background:url(../eshop/img/control.png) no-repeat;
+    background-position:-160px 0px;
+    float:left;
+
+  }
+
+
+
+/*----------------------------e shop 베스트 셀러---------------------------------------*/
+  #es_best{
+    width:100%; height:400px;
+    overflow:hidden;
+    margin-top:90px;
+  }
+
+  #es_best>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px; text-align:center;
+	padding-bottom:5px;
+  }
+
+  #es_best>h3{
+		font-size:16px; letter-spacing:-1px;
+		text-align:center; font-weight:bold;
+		font-family:'Nanum Gothic';
+  }
+
+	#es_best>span{
+  display:block;
+	width:64px; height:3px;
+	background:#fc5; margin:15px auto;
+  text-indent:-9999px;
+}
+
+/*------------box--------------*/
+#es_best>.best_box{
+    width:1320px; height:284px;
+		margin:0px auto;
+	}
+
+#es_best>.best_box>#scroller{
+	width:1320px; height:284px;
+}
+
+#es_best>.best_box>#scroller>li{
+float:left; width:230px; height:284px;
+margin-right:10px;
+ }
+
+#es_best>.best_box>#scroller>li>a{
+  display:block; width:230px; height:284px;}
+
+#es_best>.best_box>#scroller>li>a>img{
+}
+
+#es_best>.best_box>#scroller>li>a>b{
+  text-align:center;
+}
+
+/*----------------------------e shop top배너--------------------------------------*/
+#sale_banner{
+  width:100%; height:150px;
+  margin-top:0px; overflow:hidden;
+  background:#f4f4f4;
+}
+
+#sale_banner>.sale_box{
+  width:1320px; height:150px; margin:0px auto;
+}
+
+#sale_banner>.sale_box>.box1{
+  width:659px; height:150px;
+  overflow: hidden;
+  margin-right: 2px;
+  background: #fc3;
+  float:left;
+
+}
+#sale_banner>.sale_box>.box2{
+  width:659px; height:150px;
+    overflow: hidden;
+    background:#fff;
+    float: clear;
+}
+
+
+/*----------------------------e shop 제품리스트--------------------------------------*/
+#ourpd{width:100%; height:1350px; margin-top:110px;}
+#ourpd>h2{
+	font-size:30px; font-weight:bold;
+	letter-spacing:-1px; text-align:center;
+	padding-bottom:5px
+}
+
+#ourpd>h3{
+	font-size:16px; letter-spacing:-1px;
+	text-align:center; font-weight:bold;
+	font-family:'Namum Gothic';
+}
+
+#ourpd>span{
+  display:block;
+	width:64px; height:3px;
+	background:#fc5; margin:15px auto;
+  text-indent:-9999px;
+}
+#ourpd>.our_box{
+  width:1320px; height:1300px;
+	margin:40px auto; overflow:hidden;}
+
+#ourpd>.our_box>a{
+  display:block;
+  width:140px; height:30px;
+	letter-spacing:-2px;
+
+  border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+
+  text-align:center;
+  margin:20px auto;
+  line-height:30px;
+}
+
+#ourpd>.our_box>ul{
+  width:1320px; height:1100px;}
+
+#ourpd>.our_box>ul>li{
+  float:left; width:300px; height:330px;
+  margin-right:40px;  margin-bottom:40px;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f1f1f1+19,e1e1e1+47,e1e1e1+76,f6f6f6+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(241,241,241,1) 19%, rgba(225,225,225,1) 47%, rgba(225,225,225,1) 76%, rgba(246,246,246,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 19%,rgba(225,225,225,1) 47%,rgba(225,225,225,1) 76%,rgba(246,246,246,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(241,241,241,1) 19%,rgba(225,225,225,1) 47%,rgba(225,225,225,1) 76%,rgba(246,246,246,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+position:relative;
+}
+#ourpd>.our_box>ul>.box_4{
+  margin-right:0px;
+}
+#ourpd>.our_box>ul>.box_8{
+  margin-right:0px;
+}
+#ourpd>.our_box>ul>.box_12{
+  margin-right:0px;
+}
+#ourpd>.our_box>ul>li>a{
+  display:block;
+	width:300px; height:230px;
+}
+
+#ourpd>.our_box>ul>li>a>img{
+	transition:all 0.4s;
+}
+#ourpd>.our_box>ul>li>a:hover>img{
+  transform:scale(1.02);
+	transition:all 0.4s;
+}
+
+
+#ourpd>.our_box>ul>li>.our_text{
+  width:300px; height:100px;
+	background: #fff;
+}
+
+#ourpd>.our_box>ul>li>.our_text>b{
+    display:block;
+    padding-left:10px;
+		padding-top:10px;
+		font-weight:bold;
+		font-size:15px;
+		letter-spacing:-0.5px;
+  }
+
+  #ourpd>.our_box>ul>li>.our_text>p{
+   	padding-left:10px;
+		padding-top:10px;
+		font-size:14px;
+		font-weight:bold;
+		color:#333;
+		letter-spacing:-1px;
+  }
+
+  #ourpd>.our_box>ul>li>.our_text>.price{
+  text-align:right;
+	padding-top:7px; padding-right:10px;
+	 color:#333;
+  }
+
+
+
+  /*----------------------------e shop bot배너--------------------------------------*/
+  #sale_banner2{
+    width:100%; height:150px;
+    background:#f4f4f4;
+    overflow: hidden;
+  }
+
+  #sale_banner2>.sale_box2{
+    width:1320px; height:150px;
+    margin:0px auto;
+    overflow: hidden;
+  }
+
+  #sale_banner2>.sale_box2>.box3{
+    width:659px; height:150px;
+    margin-right: 2px;
+    background: #fc3;
+    float:left;
+  }
+
+  #sale_banner2>.sale_box2>.box4{
+    width:659px; height:150px;
+      overflow: hidden;
+      background:#fff;
+  }
+
+
+
+
+  /*----------------------------고객지원-------------------------------------*/
+
+
+
+  #es_support{
+    width:100%; height:343px;
+    position:relative; background: #fff;
+    margin-top:100px;
+  }
+
+   #es_support>.sup_top{
+    width:1205px; height:66px; background: #fc0;
+    margin:0px auto;
+    position:relative; top:-30px;
+   }
+
+#es_support>.sup_top>h2{
+      font-size: 20px; float:left; margin-left:155px;
+      height:66px; line-height:66px;
+			letter-spacing:-2px;
+}
+
+#es_support>.sup_top>span:nth-of-type(1){
+  display:block;
+  float:left;
+  width:28px; height:26px;
+  text-indent:-9999px;
+  background:url(../eshop/img/control.png) no-repeat;
+  background-position:0px -67px;
+  margin-left:80px; margin-top:17px;
+}
+#es_support>.sup_top>p:nth-of-type(1){
+  float:left; margin-left:10px;
+  width:216px; height:66px;
+  line-height: 66px;
+  font-size:16px;
+  font-weight:bold;
+	letter-spacing:-1px;
+}
+
+
+#es_support>.sup_top>span:nth-of-type(2){
+  display:block;
+  float:left;
+  width:28px; height:26px;
+  text-indent:-9999px;
+  background:url(../eshop/img/control.png) no-repeat;
+  background-position:-28px -67px;
+  margin-left:40px; margin-top:18px;
+}
+
+#es_support>.sup_top>p:nth-of-type(2){
+  float:left; margin-left:7px;
+  width:415px; height:66px;
+  line-height: 66px;
+  font-size:16px;
+  font-weight:bold;
+}
+
+#es_support>.sup_box{
+  width:1320px; height:343px; margin:0px auto;}
+
+#es_support>.sup_box>div{
+    float:left;
+    width:320px; height:230px;
+    border-right:1px solid #ccc;
+    position:relative;}
+#es_support>.sup_box>div:nth-of-type(4){
+  border-right:0px;
+}
+#es_support>.sup_box>div>a{
+  display:block; width:320px; height:230px;
+}
+#es_support>.sup_box>div>a>img{
+  position:absolute; left:95px; top:0px;
+
+}
+#es_support>.sup_box>div>a>span{
+display:block;
+margin-top:150px;
+text-align:center;
+}

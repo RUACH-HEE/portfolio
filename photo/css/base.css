@@ -1,0 +1,15 @@
+@charset "utf-8";
+body,div,h1,h2,h3,ul,li,p,table,tbody,thead,tfoot{
+margin:0px; padding:0px; }
+
+a{list-style:none; text-decoration:none; color:#000;}
+ul,li{text-decoration:none; list-style:none;}
+img{border:0px none;}
+
+caption{text-indent:-9999px;}
+
+h1,h2,h3{font-size:100%;}
+strong,em,th{font-weight:normal; font-style:normal}
+
+table{border-collapse:collapse; border-spacing:0px;}
+td,th{text-align:left;}

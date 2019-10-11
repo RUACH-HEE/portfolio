@@ -1,0 +1,587 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no,address=no,email=no">
+<title>손민희 포트폴리오 ㅣ 서울역사박물관</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.js"></script>
+<link rel="stylesheet" type="text/css" href="css/index.css"/>
+<link rel="stylesheet" type="text/css" href="css/base.css"/>
+<script src="js/prefixfree.min.js"></script>
+<!--[if lt IE9]>
+<script src="js/html5shiv.min.js"></script>
+<script src="js/css3-mediaqueries.min.js"></script>
+<![end if]-->
+
+<!-- slick -->
+<script src="css/slick/slick.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick/slick-theme.css"/>
+
+
+<script type="text/javascript">
+$(function(){
+	$('.permanent').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 15000,
+	  });
+	$('.education').slick({
+		dots: true,
+		arrows: false,
+	 	slidesToShow: 1,
+  	slidesToScroll: 1,
+  	autoplay: true,
+  	autoplaySpeed: 5000,
+		fade: true
+	});
+	$('.relics').slick({
+	  slidesToShow: 1,
+  	slidesToScroll: 1,
+  	autoplay: true,
+  	autoplaySpeed: 12000,
+		fade: true
+	});
+	$('.pops').slick({
+		dots: true,
+		arrows: false,
+	 	slidesToShow: 1,
+  	slidesToScroll: 1,
+  	autoplay: true,
+  	autoplaySpeed: 9000,
+		fade: true
+	});
+
+	$(".gnb").on({
+  "mouseenter":function(){
+    $(".sub_bg").stop().slideDown(400);
+		$(".sub").stop().slideDown(400);
+  },
+  "mouseleave":function(){
+    $(".sub_bg").stop().slideUp(400);
+		$(".sub").stop().slideUp(400);
+  }
+});
+
+	$(".language").click(function(){
+		$(".language_sub").toggleClass("off");
+	});
+
+	$(".t_m_button").click(function(){
+		$(".btn1").toggleClass("active1");
+		$(".btn2").toggleClass("active2");
+		$(".btn3").toggleClass("active3");
+		$("nav").slideToggle();
+	});
+
+$(".t_m_tnb").click(function(){
+	$(".t_m_tnblist").slideToggle();
+});
+});
+</script>
+
+</head>
+<body>
+
+<header>
+<div id="nav_wrap">
+	<div class="nav_top_wrap">
+    <div class="nav_top">
+    	<div class="family_site">
+        	<ul>
+        			<li><a href="javascript:;">서울특별시</a></li>
+                    <li><a href="javascript:;">한양도성박물관</a></li>
+                    <li><a href="javascript:;">청계천박물관</a></li>
+                    <li><a href="javascript:;">백인제가옥</a></li>
+                    <li><a href="javascript:;">경희궁</a></li>
+                    <li><a href="javascript:;">경교장</a></li>
+                    <li><a href="javascript:;">동대문역사관</a></li>
+        	</ul>
+        </div>
+
+        <div class="tnb">
+        	<ul>
+        		<li><a href="javascript:;">로그인</a></li>
+                <li><a href="javascript:;">회원가입</a></li>
+                <li><a href="javascript:;">사이트맵</a></li>
+                <li class="language"><a href="javascript:;">LANGUAGE <span class="lang"></span> </a>
+                	<ul class="language_sub">
+                    	<li><a href="javascript:;">한국어 Korea</a></li>
+                        <li><a href="javascript:;">영어 English</a></li>
+                        <li><a href="javascript:;">일본어 Japanese</a></li>
+                        <li><a href="javascript:;">중국어 Chinese</a></li>
+                    </ul>
+                </li>
+        	</ul>
+        </div>
+    </div>
+  </div>
+    <div class="nav_bot">
+    	<h1><a href="minheee.dothome.co.kr">서울역사박물관홈페이지</a></h1>
+			<div class="gnb">
+        <ul>
+        	<li><a href="#">이용안내</a>
+            	<ul class="sub">
+                	<li><a href="#">관람안내</a></li>
+                    <li><a href="#">시설안내</a></li>
+                    <li><a href="#">박물관예약</a></li>
+                    <li><a href="#">멤버십</a></li>
+                </ul>
+            </li>
+
+            <li><a href="javascript:;">전시</a>
+            	<ul class="sub">
+                	<li><a href="#">연간전시일정</a></li>
+                    <li><a href="#">기획전시</a></li>
+                    <li><a href="#">상설전시</a></li>
+                    <li><a href="#">작은전시</a></li>
+                    <li><a href="#">기증유물전시</a></li>
+                    <li><a href="#">야외전시장</a></li>
+                    <li><a href="#">온라인전시관</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">교육</a>
+            	<ul class="sub">
+                	<li><a href="#">연간교육일정</a></li>
+                    <li><a href="#">교육안내</a></li>
+                    <li><a href="#">교육예약</a></li>
+                    <li><a href="#">강의자료</a></li>
+                    <li><a href="#">교육활동지</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">유물</a>
+            	<ul class="sub">
+                	<li><a href="#">소장유물정보</a></li>
+                    <li><a href="#">유물구입</a></li>
+                    <li><a href="#">유물기증</a></li>
+                    <li><a href="#">보존과학</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">자료실</a>
+            	<ul class="sub">
+                	<li><a href="#">박물관간행물</a></li>
+                    <li><a href="#">동영상자료</a></li>
+                    <li><a href="#">행정자료</a></li>
+                    <li><a href="#">서울역사자료실</a></li>
+                    <li><a href="#">디지털아카이브</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">열린마당</a>
+            	<ul class="sub">
+                	<li><a href="#">새소식</a></li>
+                    <li><a href="#">이달의일정</a></li>
+                    <li><a href="#">문화행사</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">참여마당</a></li>
+                    <li><a href="#">수령증</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">박물관소개</a>
+            	<ul class="sub">
+                	<li><a href="#">관장인사말</a></li>
+                    <li><a href="#">설립목적및연혁</a></li>
+                    <li><a href="#">박물관비전</a></li>
+                    <li><a href="#">조직및주요업무</a></li>
+                    <li><a href="#">박물관로고</a></li>
+                    <li><a href="#">분관소개</a></li>
+                </ul>
+            </li>
+        </ul>
+				</div>
+    </div>
+</div>
+<div class="sub_bg">
+</div>
+
+<!--태블릿 모바일 일 때 네비게이션 -->
+<div class="t_m_nav">
+	<div class="t_m_gnb">
+
+		<div class="t_m_button">
+			<span class="btn1"></span>
+			<span class="btn2"></span>
+			<span class="btn3"></span>
+		</div>
+
+		<nav>
+		<ul>
+			<li><a href="#">이용안내</a>
+					<ul class="t_m_sub">
+							<li><a href="#">관람안내</a></li>
+								<li><a href="#">시설안내</a></li>
+								<li><a href="#">박물관예약</a></li>
+								<li><a href="#">멤버십</a></li>
+						</ul>
+				</li>
+
+				<li><a href="javascript:;">전시</a>
+					<ul class="t_m_sub">
+							<li><a href="#">연간전시일정</a></li>
+								<li><a href="#">기획전시</a></li>
+								<li><a href="#">상설전시</a></li>
+								<li><a href="#">작은전시</a></li>
+								<li><a href="#">기증유물전시</a></li>
+								<li><a href="#">야외전시장</a></li>
+								<li><a href="#">온라인전시관</a></li>
+						</ul>
+				</li>
+
+				<li><a href="#">교육</a>
+					<ul class="t_m_sub">
+							<li><a href="#">연간교육일정</a></li>
+								<li><a href="#">교육안내</a></li>
+								<li><a href="#">교육예약</a></li>
+								<li><a href="#">강의자료</a></li>
+								<li><a href="#">교육활동지</a></li>
+						</ul>
+				</li>
+
+				<li><a href="#">유물</a>
+					<ul class="t_m_sub">
+							<li><a href="#">소장유물정보</a></li>
+								<li><a href="#">유물구입</a></li>
+								<li><a href="#">유물기증</a></li>
+								<li><a href="#">보존과학</a></li>
+						</ul>
+				</li>
+
+				<li><a href="#">자료실</a>
+					<ul class="t_m_sub">
+							<li><a href="#">박물관간행물</a></li>
+								<li><a href="#">동영상자료</a></li>
+								<li><a href="#">행정자료</a></li>
+								<li><a href="#">서울역사자료실</a></li>
+								<li><a href="#">디지털아카이브</a></li>
+						</ul>
+				</li>
+
+				<li><a href="#">열린마당</a>
+					<ul class="t_m_sub">
+							<li><a href="#">새소식</a></li>
+								<li><a href="#">이달의일정</a></li>
+								<li><a href="#">문화행사</a></li>
+								<li><a href="#">FAQ</a></li>
+								<li><a href="#">참여마당</a></li>
+								<li><a href="#">수령증</a></li>
+						</ul>
+				</li>
+
+				<li><a href="#">박물관소개</a>
+					<ul class="t_m_sub">
+							<li><a href="#">관장인사말</a></li>
+								<li><a href="#">설립목적및연혁</a></li>
+								<li><a href="#">박물관비전</a></li>
+								<li><a href="#">조직및주요업무</a></li>
+								<li><a href="#">박물관로고</a></li>
+								<li><a href="#">분관소개</a></li>
+						</ul>
+				</li>
+		</ul>
+		</nav>
+		</div>
+
+		<div class="logo">
+		<a href="minheee.dothome.co.kr">서울역사박물관홈페이지</a>
+		</div>
+
+		<div class="t_m_tnb">
+			<div class="t_m_tnb_icon">
+				<span class="one"></span>
+				<span class="two"></span>
+			</div>
+
+			<div class="t_m_tnblist">
+			<ul>
+				<li><a href="javascript:;">로그인</a></li>
+						<li><a href="javascript:;">회원가입</a></li>
+						<li><a href="javascript:;">사이트맵</a></li>
+						<li class="t_m_language"><a href="javascript:;">LANGUAGE <span class="lang"></span> </a>
+							<ul class="t_m_language_sub">
+									<li><a href="javascript:;">한국어 Korea</a></li>
+										<li><a href="javascript:;">영어 English</a></li>
+										<li><a href="javascript:;">일본어 Japanese</a></li>
+										<li><a href="javascript:;">중국어 Chinese</a></li>
+								</ul>
+						</li>
+			</ul>
+		</div>
+
+		</div>
+
+<!--태블릿 모바일 네비게이션 끝-->
+
+</div>
+</header>
+<!-- header end-->
+
+<!-- main 전시포스터 시작-->
+<section id="main">
+<div class="main_tit"><h2>현재 진행중인 전시</h2></div>
+	<div id="poster_wrap">
+    	<!--가장 최신 전시-->
+    	<div class="poster">
+					<div class="img">
+					<a href="#"><img src="img/main/namdaemun_market.jpg" alt="2017 서울반세기 종합전 남대문시장"></a>
+					</div>
+
+        	<div class="up">
+            	<div class="up_inner">
+            	<p>2017 서울반세기 종합전</p>
+            	<b>남대문시장</b>
+                <p class="dat">2017.04.21 - 07.02</p>
+           		</div>
+            </div>
+        </div>
+
+    	<div class="poster even">
+				<div class="img">
+				<a href="#"><img src="img/main/women_who.jpg" alt="독일로 간 한국 간호 여성들의 이야기"></a>
+				</div>
+
+        	<div class="up">
+            	<div class="up_inner">
+            	<p>국경을넘어 경계를넘어</p>
+            	<b>독일로 간 한국 간호 여성들의 이야기</b>
+                <p class="dat">2017.06.27 - 09.03</p>
+                </div>
+            </div>
+        </div>
+
+    	<div class="poster">
+				<div class="img">
+				<a href="#"><img src="img/main/lookingback_cheonggyecheon.jpg" alt="다시보는 청계천"></a>
+				</div>
+
+        	<div class="up">
+            	<div class="up_inner">
+            	<p>구와바라 시세이 사진전</p>
+            	<b>다시보는 청계천</b>
+                <p class="dat">2017.04.27 - 07.30</p>
+                </div>
+            </div>
+        </div>
+
+    	<div class="poster even permanent">
+          <div><img src="img/main/zone1.jpg" alt="서울역사박물관 상설전시 zone 1"></div>
+          <div><img src="img/main/zone2.jpg" alt="서울역사박물관 상설전시 zone 2"></div>
+          <div><img src="img/main/zone3.jpg" alt="서울역사박물관 상설전시 zone 3"></div>
+          <div><img src="img/main/zone4.jpg" alt="서울역사박물관 상설전시 zone 4"></div>
+      </div>
+    </div>
+</section>
+<!--main section end-->
+
+
+<!--middle bar 미들 콘텐츠 시작-->
+<section id="middlebar">
+<h2>퀵메뉴, 관람안내</h2>
+	<div id="middle_wrap">
+    	<div class="quick_menu">
+        <ul>
+        	<li><a href="javascript:;"><span class="icon1">올해의 전시일정</span>올해의 전시일정</a></li>
+            <li><a href="javascript:;"><span class="icon2">연간교육 일정</span>연간교육 일정</a></li>
+            <li><a href="javascript:;"><span class="icon3">문화행사 안내</span>문화행사 안내</a></li>
+            <li><a href="javascript:;"><span class="icon4">소장유물</span>소장유물 안내</a></li>
+            <li><a href="javascript:;"><span class="icon5">온라인전시관</span>온라인전시관</a></li>
+            <li><a href="javascript:;"><span class="icon6">박물관 문헌정보</span>박물관 문헌정보</a></li>
+        </ul>
+        </div>
+
+        <div class="info">
+        	<h3>관람안내</h3>
+            <b>화-금요일 ㅣ 09:00 - 20:00</b>
+            <b>주말 및 공휴일 ㅣ 09:00 - 19:00</b>
+            <p>1월 1일, 매주 월요일 휴관</p>
+            <p>매주 월요일에는 1층 편의시설만 개방합니다</p>
+            <div class="more">
+            <a href="#">자세히보기<span>바로가기</span></a>
+            <a href="#">오시는길<span>바로가기</span></a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- middle bar end-->
+
+<!-- contents 시작-->
+<section id="contents">
+<div class="contents_tit">
+<h2>서울역사박물관의 다양한 소식을 알려드립니다</h2>
+</div>
+	<div id="contents_wrap">
+
+        <!--최신 프로그램 및 행사-->
+    	<div class="program content">
+        	<div class="tit">
+        	<h3>프로그램 및 행사</h3>
+            <p>서울역사박물관의 특별한 프로그램</p>
+            </div>
+
+            <div class="box">
+            <a href="javascript:;"><img src="img/contents/program/newyork_newmusic.jpg" alt="세계음악여행 재능나눔콘서트"></a>
+            </div>
+        </div>
+
+        <!--프로그램 2순위-->
+        <div class="program2 content">
+        	<div class="tit">
+            <a href="javascript:;">더보기</a>
+            </div>
+
+        	<div class="box">
+        	<a href="javascript:;"><img src="img/contents/program/sat_movie.jpg" alt="토요배리어프리영화관"></a>
+            </div>
+        </div>
+
+
+        <!--교육안내-->
+        <div class="edu content">
+        	 <div class="tit">
+             <h3>교육</h3>
+             <a href="javascript:;">더보기</a>
+             </div>
+
+             <div class="education box">
+                <div>
+                	<b>2017년 &lt;청년아카데미, 대학생 예비큐레이터&gt; 모집 안내</b>
+                    <p>접수기간.  2017-06-12 ~ 2017-06-24</p>
+                    <p>교육기간.  2017-07-03 ~ 2017-07-07</p>
+                    <p class="point">대상.  대학생 2-4학년 및 대학원생</p>
+                    <p>인원.  30명내외, 인터넷으로 접수 후 추첨선발</p>
+                </div>
+
+                <div>
+                	<b>&lt;느낌 있는 박물관&gt; 교육생 모집 안내</b>
+                    <p>접수기간.  2017-03-06 ~ 2017-11-30</p>
+                    <p>교육기간.  2017-04-04 ~ 2017-12-01</p>
+                    <p class="point">대상. 중ㆍ고등학교 특수학급 단체</p>
+                    <p>인원.   20명 내외, 일반학급은 신청하실 수 없습니다</p>
+                </div>
+
+                <div>
+                    <b>2017 청소년 박물관 톡(talk) 추가 모집 안내</b>
+                    <p>접수기간.  2017-02-23 ~ 2017-12-08</p>
+                    <p>교육기간.  2017-03-07 ~ 2017-12-08</p>
+                    <p class="point">대상.   중, 고등학교 1~3학년 학급 및 동아리 단체</p>
+                    <p>인원.  30명내외, 학급 및 동아리 단체</p>
+                </div>
+
+                <div>
+                    <b>2017 어린이 교육프로그램 '내 친구 박물관' 모집 안내</b>
+                    <p>접수기간.  2017-06-21 ~ 2017-06-29</p>
+                    <p>교육기간.  2017-08-01 ~ 2017-08-18</p>
+                    <p class="point">대상.  서울시내 지역아동센터 및 초등학교 돌봄교실 단체</p>
+                    <p>인원. 기관 당 15 ~ 25명 이내</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!--새소식 안내-->
+        <div class="notice content">
+        	<div class="tit">
+            <h3>새소식</h3>
+            <a href="javascript:;">더보기</a>
+            </div>
+
+            <div class="box">
+                <dl>
+                    <dt>문화행사</dt><dd><a href="javascript:;">6월 재능나눔콘서트 '새로운 음악이 늘 태어나는 곳, 뉴욕!' 개최 안내('17.6.17., 토)</a></dd>
+                    <dt>공고/구인</dt><dd><a href="javascript:;">서울역사박물관 장기보관물품 처분 공고</a></dd>
+                    <dt>교육예약</dt><dd><a href="javascript:;">2017년 여름방학 지역아동센터 어린이 교육프로그램 '내 친구 박물관' 모집 안내</a></dd>
+                    <dt>공지사항</dt><dd><a href="javascript:;">2017년 하반기 보존과학 연수생 모집</a></dd>
+                    <dt>언론보도</dt><dd><a href="javascript:;">서울역사박물관, 시장백화점 '남대문시장' 展</a></dd>
+                    <dt>교육예약</dt><dd><a href="javascript:;">'국경을 넘어 경계를 넘어' 전시연계 특별강연 수강생 모집</a></dd>
+                    <dt>문화행사</dt><dd><a href="javascript:;">제5회 백인제가옥 북촌음악회 개최 및 관람방법 안내</a></dd>
+                    <dt>공지사항</dt><dd><a href="javascript:;">어린이학습실 - 운영 개선 공사로 인한 일시 중단</a></dd>
+
+                </dl>
+            </div>
+        </div>
+
+
+        <!--유물기증현황 안내-->
+        <div class="relic content .slick-slider">
+        	<div class="tit">
+            <h3>유물기증현황</h3>
+            <a href="javascript:;">유물기증현황</a>
+          </div>
+
+            <div class="relics box">
+                <div><img src="img/contents/relic/1.jpg" alt="김상순님 총검술 사진">
+                <div class="stit">김상순(金祥淳)<br>총검술 사진</div></div>
+
+                <div><img src="img/contents/relic/2.jpg" alt="김대수님 마미야 중형카메라(MAMIYA RB67)">
+                <div class="stit">김대수(金大洙)<br>마미야 중형카메라(MAMIYA RB67)</div></div>
+
+                <div><img src="img/contents/relic/3.jpg" alt="박정웅님 일기장">
+                <div class="stit">박정웅(朴正雄)<br>일기장</div></div>
+
+                <div><img src="img/contents/relic/4.jpg" alt="장성준님 남대문 수리보고서">
+                <div class="stit">장성준(張聖浚)<br>남대문 수리보고서</div></div>
+            </div>
+        </div>
+
+        <!--팝업존-->
+        <div class="pop content">
+        	<div class="tit">
+        	<h3>팝업존</h3>
+            <a href="javascript:;">더보기</a>
+       		</div>
+
+            <div class="pops box">
+                <div><img src="img/contents/pop/talkmuseum.jpg" alt="말하는박물관 안내"></div>
+                <div><img src="img/contents/pop/message.jpg" alt="박물관 소식을 문자로 받아보세요"></div>
+                <div><img src="img/contents/pop/seoulmap.jpg" alt="서울지도 지도전시관"></div>
+                <div><img src="img/contents/pop/korea.jpg" alt="대한민국 임시 정부 마지막 청사, 경교장 관람안내"></div>
+       		 </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+	<div id="footer_wrap">
+    	<div class="option">
+        	<ul>
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">영상정보처리기기(CCTV)관리방침</a></li>
+            <li><a href="#">뷰어다운로드</a></li>
+            <li><a href="#">배너연결안내</a></li>
+            <li><a href="#">오류신고 및 개선의견</a></li>
+            </ul>
+        </div>
+
+        <div class="about">
+        	<ul>
+            <li><a href="#" class="twit">서울역사박물관 트위터</a></li>
+            <li><a href="#" class="face">서울역사박물관 페이스북</a></li>
+            <li><a href="#" class="yt">서울역사박물관 유튜브</a></li>
+            <li><a href="#" class="in">서울역사박물관 인스타그램</a></li>
+            <li><a href="#" class="google">서울역사박물관 구글</a></li>
+            <li><a href="#" class="more">서울역사박물관 더보기</a></li>
+            </ul>
+        </div>
+
+        <div class="address_wrap">
+        	<address>
+            	03177 서울특별시 종로구 새문안로 55 서울역사박물관 02-724-0274~6 <br>
+				COPYRIGHT(C) 2011. SEOUL MUSEUM OF HISTORY ALL RIGHTS RESERVED
+            </address>
+            <p> 이 사이트는 손민희 포트폴리오용으로 제작된 사이트 입니다.</p>
+        </div>
+
+				<div class="footlogo">
+            	<p>서울역사박물관</p>
+        </div>
+	</div>
+</footer>
+
+</body>
+</html>
